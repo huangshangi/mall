@@ -3,15 +3,16 @@
    <div class="leftdiv" id="leftdiv">
      <ul>
        <li v-for="(item,index) in goodsList" :key="index" @mouseover="goodsListOver(index)" @mouseout="goodsListOut()">
-         <a href="#">{{item}}</a>
+         <a href="#">{{item.name}}</a>
        </li>
      </ul>
    </div>
    <div id="hiddendiv" class="rightdiv" :class="{'showHide':showHide}" @mouseover="hiddenPanelOver()" @mouseout="hiddenPanelOut()">
-     <dl>
-       <dt><a href="#">二级</a></dt>
-       <dd><a href="#">超博电视</a><a href="#">超博电视</a><a href="#">超博电视</a><a href="#">超博电视</a><a href="#">超博电视</a><a href="#">超博电视</a>
-         <a href="#">超博电视</a><a href="#">超博电视</a><a href="#">超博电视</a><a href="#">超博电视</a><a href="#">超博电视</a><a href="#">超博电视</a></dd>
+     <dl v-for="(item,index) in goodsList[seleIndex].childrens" :key="index">
+       <dt><a href="#">{{item.name}}</a></dt>
+       <dd v-for="(item2,index2) in item.childrens" :key="index2">
+         <a href="#">{{item2.name}}</a>
+       </dd>
      </dl>
    </div>
  </div>
@@ -25,8 +26,26 @@ export default {
       goodsOut: true,
       hiddenOut: true,
       hiddenDisplay: false,
-      goodsList: ['家用电器', '手机', '电脑']
+      seleIndex: 0,
+      goodsList: [{
+        name: '家用电器',
+        id: 1,
+        childrens: [
+          {
+            name: '二级',
+            id: 2,
+            childrens: [
+              {
+                name: '超博电视'
+              }
+            ]
+          }
+        ]
+      }]
     }
+  },
+  props: {
+    // goodsList: Array
   },
   computed: {
     showHide: function () {
@@ -36,6 +55,7 @@ export default {
   },
   methods: {
     goodsListOver (index) {
+      this.seleIndex = index
       let initTop = document.getElementById('leftdiv').offsetTop
       const h0 = document.getElementById('leftdiv').offsetTop + (index * 30)
       const y = document.getElementById('hiddendiv').offsetHeight
@@ -149,6 +169,9 @@ console.log('ceshi')
     height: 14px;
     line-height: 14px;
     margin: 4px 0;
+  }
+  .rightdiv dl dd a:hover{
+    color: #e4393c;
   }
   .showHide{
     display: block;
