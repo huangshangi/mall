@@ -83,6 +83,9 @@ console.log('ceshi')
 </script>
 
 <style scoped>
+  .alldiv{
+    position: relative;
+  }
   .leftdiv{
     display: block;
     width: 240px;
@@ -115,12 +118,12 @@ console.log('ceshi')
   }
 
   .rightdiv{
+    position: absolute;
     display: none;
     float: left;
     width: 715px;
-    left: 250px;
-    position: absolute;
-    top: 40px;
+    left: 240px;
+    top: 0px;
     border: 1px solid #DDD;
     z-index: 4;
     background: white;

@@ -3,11 +3,11 @@
   <Search></Search>
   <el-row>
 <!--    商品类别级联-->
-    <el-col :offset="3" :span="3">
+    <el-col :offset="3" :span="4">
       <GoodCascader></GoodCascader>
     </el-col>
 <!--轮播图-->
-    <el-col :span="9">
+    <el-col :span="8">
       <el-carousel height="500px" style="background-color: red" autoplay="false" interval="10000000000000">
         <el-carousel-item v-for="(item,index) in goodsRecommend" :key="index">
           <el-image class="image" :src="item" object-fit="fill"/>
@@ -20,6 +20,18 @@
     </el-col>
   </el-row>
 
+  <!--推荐商品页-->
+  <el-row>
+    <el-col :offset="3" span="18">
+      <goods-index-temple title="热门解决方案"/>
+    </el-col>
+  </el-row>
+<!--  推荐专家页-->
+  <el-row>
+    <el-col :offset="3" span="18">
+      <goods-index-temple title="热门专家"/>
+    </el-col>
+  </el-row>
 </template>
 
 <script>
@@ -27,17 +39,20 @@ import Title from '../components/title'
 import Search from '@/components/search'
 import GoodCascader from '@/components/goodsCascader'
 import Profile from '@/components/profile'
+// import GoodsBrief from '@/components/goodsBrief'
+import goodsIndexTemple from '@/components/goodsIndexTemple'
 export default {
   name: 'index',
   components: {
     Profile,
     GoodCascader,
     Search,
-    Title
+    Title,
+    goodsIndexTemple
   },
   data () {
     return {
-      goodsRecommend: ['https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2961606521,3400735427&fm=26&gp=0.jpg']
+      goodsRecommend: ['https://img13.360buyimg.com/da/s1180x940_jfs/t1/147280/6/10614/56058/5f8551b4Efdb27ec4/2730f7c703b0c9bc.jpg.webp']
     }
   }
 }

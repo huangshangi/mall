@@ -7,6 +7,9 @@
 
 <script>
 import index from '@/views/index'
+// import goodsIndexTemple from '@/components/goodsIndexTemple'
+// import goodsBrief from '@/components/goodsBrief'
+// import testParent from '@/components/test-parent'
 export default {
   components: { index }
 }
