@@ -1,6 +1,8 @@
 <template>
   <Title></Title>
-  <Search></Search>
+  <el-row>
+    <el-col :span="18" :offset="3"><Search></Search></el-col>
+  </el-row>
   <el-row>
 <!--    商品类别级联-->
     <el-col :offset="3" :span="4">
