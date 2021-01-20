@@ -5,7 +5,10 @@
 <!--  <router-view/>-->
 <!--  <goodsIndexTemple/>-->
 <!--  <slide-show/>-->
-  <GoodsDetailService/>
+<!--  <GoodsDetailService/>-->
+<!--  <evaluate-tarbar/>-->
+<!--  <evalute-item/>-->
+  <tarbar-temp/>
 </template>
 
 <script>
@@ -14,10 +17,13 @@
 // import goodsBrief from '@/components/goodsBrief'
 // import testParent from '@/components/test-parent'
 // import GoodsDetail from '@/views/goodsDetail'
-import GoodsDetailService from '@/components/goodsDetailService'
+// import GoodsDetailService from '@/components/goodsDetailService'
 // import slideShow from '@/components/slideShow'
+// import EvaluateTarbar from '@/components/evaluateTarbar'
+// import EvaluteItem from '@/components/evaluteItem'
+import TarbarTemp from '@/components/tarbarTemp'
 export default {
-  components: { GoodsDetailService }
+  components: { TarbarTemp }
 }
 </script>
 

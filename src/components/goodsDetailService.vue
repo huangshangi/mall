@@ -15,7 +15,13 @@
         </el-row>
       </el-tab-pane>
 
-      <el-tab-pane label="累计评价1000" name="second"></el-tab-pane>
+      <el-tab-pane label="累计评价1000" name="second">
+        <el-row>
+          <el-col>
+            <evaluate-tarbar/>
+          </el-col>
+        </el-row>
+      </el-tab-pane>
       <el-tab-pane label="售后服务" name="third">售后服务</el-tab-pane>
     </el-tabs>
   </div>
@@ -23,8 +29,10 @@
 </template>
 
 <script>
+import EvaluateTarbar from '@/components/evaluateTarbar'
 export default {
-  name: 'goodsDetailService'
+  name: 'goodsDetailService',
+  components: { EvaluateTarbar }
 }
 </script>
 
