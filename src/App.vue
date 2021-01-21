@@ -8,7 +8,8 @@
 <!--  <GoodsDetailService/>-->
 <!--  <evaluate-tarbar/>-->
 <!--  <evalute-item/>-->
-  <tarbar-temp/>
+  <GoodsDetail/>
+<!--  <tarbar-temp/>-->
 </template>
 
 <script>
@@ -16,14 +17,15 @@
 // import goodsIndexTemple from '@/components/goodsIndexTemple'
 // import goodsBrief from '@/components/goodsBrief'
 // import testParent from '@/components/test-parent'
-// import GoodsDetail from '@/views/goodsDetail'
+import GoodsDetail from '@/views/goodsDetail'
 // import GoodsDetailService from '@/components/goodsDetailService'
 // import slideShow from '@/components/slideShow'
 // import EvaluateTarbar from '@/components/evaluateTarbar'
 // import EvaluteItem from '@/components/evaluteItem'
-import TarbarTemp from '@/components/tarbarTemp'
+// import TarbarTemp from '@/components/tarbarTemp'
+// import CommentItem from '@/components/commentItem'
 export default {
-  components: { TarbarTemp }
+  components: { GoodsDetail }
 }
 </script>
 

@@ -1,7 +1,7 @@
 <template>
   <mall-title></mall-title>
   <el-row>
-    <el-col :offset="3">
+    <el-col :offset="3" :span="21">
       <search/>
     </el-col>
   </el-row>
@@ -103,8 +103,9 @@
         </el-row>
       </div>
     </el-col>
-<!--    评价列表tabs-->
-
+    <el-col :offset="1" :span="14" class="border">
+      <goods-detail-service/>
+    </el-col>
   </el-row>
 
 </template>
@@ -112,9 +113,10 @@
 <script>
 import Search from '@/components/search'
 import mallTitle from '@/components/title'
+import GoodsDetailService from '@/components/goodsDetailService'
 export default {
   name: 'goodsDetail',
-  components: { Search, mallTitle },
+  components: { GoodsDetailService, Search, mallTitle },
   methods: {
     goodsDetailImageChange (index) {
       this.currentPicIndex = index

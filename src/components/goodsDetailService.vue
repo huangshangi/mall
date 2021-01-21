@@ -17,12 +17,19 @@
 
       <el-tab-pane label="累计评价1000" name="second">
         <el-row>
-          <el-col>
+          <el-col :offset="1" :span="23">
             <evaluate-tarbar/>
           </el-col>
         </el-row>
+        <el-row>
+          <el-col :offset="1" :span="23">
+            <comment-item/>
+          </el-col>
+        </el-row>
       </el-tab-pane>
-      <el-tab-pane label="售后服务" name="third">售后服务</el-tab-pane>
+      <el-tab-pane label="售后服务" name="third">
+        <el-image class="panel1-image" src="https://img14.360buyimg.com/cms/jfs/t1/127056/12/17881/332375/5fa68f3aE919f83a2/1f5217596ea533a1.jpg"/>
+      </el-tab-pane>
     </el-tabs>
   </div>
 
@@ -30,9 +37,10 @@
 
 <script>
 import EvaluateTarbar from '@/components/evaluateTarbar'
+import CommentItem from '@/components/commentItem'
 export default {
   name: 'goodsDetailService',
-  components: { EvaluateTarbar }
+  components: { CommentItem, EvaluateTarbar }
 }
 </script>
 
