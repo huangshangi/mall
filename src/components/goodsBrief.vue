@@ -24,8 +24,8 @@ export default {
 <style scoped>
 .goodsbrief{
   display: block;
-  width: 250px;
-  height: 390px;
+  width: 100%;
+  /*height: 390px;*/
   background-color: white;
   border: 1px solid red;
 }

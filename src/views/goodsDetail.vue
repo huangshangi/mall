@@ -7,20 +7,7 @@
   </el-row>
 
 <!--  导航栏-->
-  <el-row>
-    <el-col :span="3">
-      <el-menu mode="horizontal" background-color="#0191d8" text-color="#ffffff"><el-menu-item></el-menu-item></el-menu>
-    </el-col>
-    <el-col :span="21">
-      <el-menu mode="horizontal" background-color="#0191d8" text-color="#ffffff" >
-        <el-menu-item index="1">首页</el-menu-item>
-        <el-menu-item index="2">所有宝贝</el-menu-item>
-        <el-menu-item index="3">所有专家</el-menu-item>
-        <el-menu-item index="4">店内类别1</el-menu-item>
-        <el-menu-item index="5">店内类别2</el-menu-item>
-      </el-menu>
-    </el-col>
-  </el-row>
+  <nav-template/>
 <!--商品详细信息-->
   <el-row>
 <!--  商品图片  -->
@@ -71,15 +58,7 @@
 <!--  下方店铺.评论等-->
   <el-row>
     <el-col :offset="3" :span="3" class="border">
-      <div>
-        <el-row class="goodsDetailForm"><label class="contentInCenter">李可（专家名称）</label></el-row>
-        <el-row class="goodsDetailForm">
-          <el-col :span="8"><el-row><label class="contentInCenter">态度</label></el-row><el-row><label class="contentInCenter">4.9</label></el-row></el-col>
-          <el-col :span="8"><el-row><label class="contentInCenter">态度</label></el-row><el-row><label class="contentInCenter">4.9</label></el-row></el-col>
-          <el-col :span="8"><el-row><label class="contentInCenter">态度</label></el-row><el-row><label class="contentInCenter">4.8</label></el-row></el-col>
-        </el-row>
-        <el-row class="goodsDetailForm"><el-col><el-button>与他交流</el-button></el-col></el-row>
-      </div>
+      <store-brief-information/>
       <div class="border">
         <el-row class="border">
           <el-image class="goodsDetailDigestImage" src="https://img12.360buyimg.com/n5/s54x54_jfs/t1/148767/39/18017/86358/5fd32ff0E5ca41721/d885f7c401dfa557.jpg"></el-image>
@@ -114,9 +93,11 @@
 import Search from '@/components/search'
 import mallTitle from '@/components/title'
 import GoodsDetailService from '@/components/goodsDetailService'
+import NavTemplate from '@/components/navTemplate'
+import StoreBriefInformation from '@/components/storeBriefInformation'
 export default {
   name: 'goodsDetail',
-  components: { GoodsDetailService, Search, mallTitle },
+  components: { StoreBriefInformation, NavTemplate, GoodsDetailService, Search, mallTitle },
   methods: {
     goodsDetailImageChange (index) {
       this.currentPicIndex = index
