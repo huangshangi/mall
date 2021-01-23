@@ -8,8 +8,9 @@
 <!--  <GoodsDetailService/>-->
 <!--  <evaluate-tarbar/>-->
 <!--  <evalute-item/>-->
-  <shoppingCart/>
+<!--  <shoppingCart/>-->
 <!--  <tarbar-temp/>-->
+  <setting-order/>
 </template>
 
 <script>
@@ -25,9 +26,10 @@
 // import EvaluteItem from '@/components/evaluteItem'
 // import TarbarTemp from '@/components/tarbarTemp'
 // import CommentItem from '@/components/commentItem'
-import shoppingCart from '@/views/shoppingCart'
+// import shoppingCart from '@/views/shoppingCart'
+import SettingOrder from '@/views/settingOrder'
 export default {
-  components: { shoppingCart }
+  components: { SettingOrder }
 }
 </script>
 

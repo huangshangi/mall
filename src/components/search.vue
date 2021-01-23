@@ -1,25 +1,32 @@
 <template>
   <el-row>
-    <slot>
       <el-col :span="3" class="search-positon-div">
         <div class="search-positon-img">
           <a href="#"><el-image :src="require('../assets/logo.png')"></el-image></a>
         </div>
       </el-col>
+    <slot>
+      <el-col :span="10" :offset="10">
+        <el-steps align-center="true">
+          <el-step title="拍下商品"></el-step>
+          <el-step title="付款到支付宝"></el-step>
+          <el-step title="确认收货"></el-step>
+          <el-step title="评价"></el-step>
+        </el-steps>
+      </el-col>
     </slot>
-
-    <el-col :offset="1" :span="18">
-      <el-row>
-        <el-col :span="1.5"><el-button class="button-noborader">全部</el-button></el-col>
-        <el-col :span="1.5"><el-button class="button-noborader">解决方案</el-button></el-col>
-        <el-col :span="1.5"><el-button class="button-noborader">专家</el-button></el-col>
-      </el-row>
-      <el-row>
-        <el-col :span="18"><el-input placeholder="请输入内容" prefix-icon="el-icon-search"> </el-input></el-col>
-        <el-col :span="1"><el-button class="button-normal">搜索</el-button></el-col>
-        <el-col :span="2" :offset="2"><el-button class="button-normal">发布需求</el-button></el-col>
-      </el-row>
-    </el-col>
+<!--    <el-col :offset="1" :span="18">-->
+<!--      <el-row>-->
+<!--        <el-col :span="1.5"><el-button class="button-noborader">全部</el-button></el-col>-->
+<!--        <el-col :span="1.5"><el-button class="button-noborader">解决方案</el-button></el-col>-->
+<!--        <el-col :span="1.5"><el-button class="button-noborader">专家</el-button></el-col>-->
+<!--      </el-row>-->
+<!--      <el-row>-->
+<!--        <el-col :span="18"><el-input placeholder="请输入内容" prefix-icon="el-icon-search"> </el-input></el-col>-->
+<!--        <el-col :span="1"><el-button class="button-normal">搜索</el-button></el-col>-->
+<!--        <el-col :span="2" :offset="2"><el-button class="button-normal">发布需求</el-button></el-col>-->
+<!--      </el-row>-->
+<!--    </el-col>-->
   </el-row>
 </template>
 
