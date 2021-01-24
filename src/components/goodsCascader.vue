@@ -79,7 +79,6 @@ export default {
     }
   }
 }
-console.log('ceshi')
 </script>
 
 <style scoped>
@@ -114,7 +113,8 @@ console.log('ceshi')
     color: #333333;
   }
   .leftdiv ul li a:hover{
-    color: #c81623;
+    /*color: #c81623;*/
+    color: #409eff;
   }
 
   .rightdiv{
@@ -151,8 +151,9 @@ console.log('ceshi')
 
   .rightdiv dl dt a
   {
-    color: #e4393c;
-    font-weight: bold;
+    /*color: #e4393c;*/
+    color: #409eff;
+    font-weight: bolder;
     text-decoration: underline;
     font-size: 10pt;
   }
@@ -174,7 +175,8 @@ console.log('ceshi')
     margin: 4px 0;
   }
   .rightdiv dl dd a:hover{
-    color: #e4393c;
+    /*color: #e4393c;*/
+    color: #409eff;
   }
   .showHide{
     display: block;

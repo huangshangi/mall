@@ -1,8 +1,10 @@
 <template>
   <div class="border">
-    <mall-title></mall-title>
     <el-row>
-      <el-col :span="18" :offset="3"><Search></Search></el-col>
+      <el-col :span="18" :offset="3"><mall-title/></el-col>
+    </el-row>
+    <el-row>
+      <el-col :span="18" :offset="3"><Search :search="false"></Search></el-col>
     </el-row>
     <el-row><el-col :span="18" :offset="3"><setting-order-main/></el-col></el-row>
   </div>

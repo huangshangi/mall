@@ -26,6 +26,8 @@ export default {
   display: block;
   width: 100%;
   /*height: 390px;*/
+  /*max-height: 450px;*/
+  max-width: 375px;
   background-color: white;
   border: 1px solid red;
 }

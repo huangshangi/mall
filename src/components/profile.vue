@@ -40,11 +40,13 @@ export default {
 <style scoped>
 .button-normal,.button-normal:focus,.button-normal:hover{
   color: white;
-  background-color: orange;
+  /*background-color: orange;*/
+  background-color: #409eff;
   border-style: none;
 }
 .button-normal:hover{
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  /*box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);*/
+  background-color: #66b1ff;
 }
 .profile-ul{
   text-align: left;

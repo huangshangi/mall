@@ -1,9 +1,13 @@
 <template>
   <div class="allDiv">
-    <mall-title></mall-title>
     <el-row>
-      <el-col :offset="3" :span="21">
-        <search/>
+      <el-col :offset="3" :span="18">
+        <mall-title></mall-title>
+      </el-col>
+    </el-row>
+    <el-row>
+      <el-col :offset="3" :span="18">
+        <search :search="true"/>
       </el-col>
     </el-row>
     <!--  导航栏-->

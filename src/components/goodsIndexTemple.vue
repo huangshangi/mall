@@ -3,11 +3,9 @@
     <div class="goodsIndexTitle">{{title}}</div>
       <el-tabs v-model="first" @tab-click="handleClick">
         <el-tab-pane label="用户管理" name="first">
-          <div v-for="(row,index) in 4" :key="row+index" class="goods-div-row">
-            <div v-for="(item,index2) in 2" :key="item+index2" class="goods-div-col">
-              <goods-brief/>
-            </div>
-          </div>
+          <el-row v-for="(row,index) in 3" :key="row+index">
+            <el-col span="8" v-for="item in 3" :key="item"><goods-brief/></el-col>
+          </el-row>
         </el-tab-pane>
         <el-tab-pane label="配置管理" name="second">配置管理</el-tab-pane>
         <el-tab-pane label="角色管理" name="third">角色管理</el-tab-pane>
@@ -35,7 +33,9 @@ export default {
 <style scoped>
 .goodsIndexAllDiv {
   border: red solid 1px;
+  background-color: #13ce66;
   /*width: 1920px;*/
+  width: 100%;
   text-align: left;
 }
 .goodsIndexTitle{
@@ -48,6 +48,6 @@ export default {
   display: inline-block;
 }
 .goods-div-col{
-  margin: 4px;
+  /*margin: 4px;*/
 }
 </style>

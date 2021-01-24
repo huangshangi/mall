@@ -1,6 +1,6 @@
 <template>
-  <el-row>
-    <el-col :span="1.5" :offset="3">
+  <el-row class="border">
+    <el-col :span="2">
       <!--  地点级联-->
       <div class="block">
         <!--    <span class="demonstration"></span>-->
@@ -15,20 +15,24 @@
     </el-col>
     <!-- 登录按钮   -->
     <!--是否登录 未登录显示登录 已登录显示个人信息    -->
-    <el-col :span="1.5" :offset="8">
+    <el-col :span="2" :offset="10 ">
       <el-button v-if="profile==null">登录</el-button>
       <el-button v-else>{{profile.name}}</el-button>
     </el-col>
     <!-- 消息按钮   -->
-    <el-col :span="1.5">
+    <el-col :span="2">
       <el-button>消息</el-button>
     </el-col>
     <!-- 购物车按钮   -->
-    <el-col :span="1.5">
+    <el-col :span="2">
       <el-button>购物车</el-button>
     </el-col>
+<!--    商家入驻-->
+    <el-col :span="2">
+      <el-button>商家入驻</el-button>
+    </el-col>
     <!-- 我的订单按钮   -->
-    <el-col :span="1.5">
+    <el-col :span="2">
       <el-button>我的订单</el-button>
     </el-col>
 <!--    <el-col :span="4">-->
@@ -99,8 +103,11 @@ export default {
 }
 
 .el-button:focus, .el-button:hover{
-  color: red;
+  color: #409eff;
   background-color: transparent;
+}
+.border{
+  border: 1px solid red;
 }
 
 </style>

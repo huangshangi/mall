@@ -21,7 +21,7 @@
     <el-divider/>
     <order-item :shoppingCart="false"/>
     <el-row><el-col :offset="19" :span="5">实付款：￥30000.00</el-col> </el-row>
-    <el-row><el-col :offset="19" :span="5"><el-button style="margin: 0px">付款</el-button></el-col> </el-row>
+    <el-row><el-col :offset="19" :span="5"><el-button style="width: 100%" type="primary">付款</el-button></el-col> </el-row>
   </div>
 </template>
 

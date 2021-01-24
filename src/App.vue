@@ -1,7 +1,7 @@
 <template>
 <!--    <router-link to="/">Home</router-link> |-->
 <!--    <router-link to="/title">About</router-link>-->
-<!--  <index/>-->
+<!--  <shoppingCart/>-->
 <!--  <router-view/>-->
 <!--  <goodsIndexTemple/>-->
 <!--  <slide-show/>-->
@@ -10,7 +10,8 @@
 <!--  <evalute-item/>-->
 <!--  <shoppingCart/>-->
 <!--  <tarbar-temp/>-->
-  <setting-order/>
+<!--  <GoodsStore/>-->
+  <demand-require/>
 </template>
 
 <script>
@@ -27,9 +28,11 @@
 // import TarbarTemp from '@/components/tarbarTemp'
 // import CommentItem from '@/components/commentItem'
 // import shoppingCart from '@/views/shoppingCart'
-import SettingOrder from '@/views/settingOrder'
+// import SettingOrder from '@/views/settingOrder'
+// import shoppingCart from '@/views/shoppingCart'
+import DemandRequire from '@/views/demandRequire'
 export default {
-  components: { SettingOrder }
+  components: { DemandRequire }
 }
 </script>
 

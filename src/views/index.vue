@@ -1,60 +1,41 @@
 <template>
-  <Title></Title>
-  <el-row>
-    <el-col :span="18" :offset="3"><Search></Search></el-col>
+  <el-row><el-col :offset="3" :span="18"><mall-title></mall-title></el-col></el-row>
+  <el-row class="marginTop10">
+    <el-col :span="18" :offset="3"><Search :search="true"></Search></el-col>
   </el-row>
-  <el-row>
-<!--    商品类别级联-->
-    <el-col :offset="3" :span="4">
-      <GoodCascader></GoodCascader>
-    </el-col>
-<!--轮播图-->
-    <el-col :span="8">
-      <el-carousel height="500px" style="background-color: red" autoplay="false" interval="10000000000000">
-        <el-carousel-item v-for="(item,index) in goodsRecommend" :key="index">
-          <el-image class="image" :src="item" object-fit="fill"/>
-        </el-carousel-item>
-      </el-carousel>
-    </el-col>
-<!--    个人信息页-->
-    <el-col :span="5">
-      <Profile/>
-    </el-col>
+  <el-row class="marginTop10">
+    <el-col :span="18" :offset="3"><index-main/></el-col>
   </el-row>
-
   <!--推荐商品页-->
-  <el-row>
-    <el-col :offset="3" span="18">
+  <el-row class="marginTop10">
+    <el-col :offset="3" :span="18">
       <goods-index-temple title="热门解决方案"/>
     </el-col>
   </el-row>
 <!--  推荐专家页-->
-  <el-row>
-    <el-col :offset="3" span="18">
+  <el-row class="marginTop10">
+    <el-col :offset="3" :span="18">
       <goods-index-temple title="热门专家"/>
     </el-col>
   </el-row>
 </template>
 
 <script>
-import Title from '../components/title'
+import mallTitle from '../components/title'
 import Search from '@/components/search'
-import GoodCascader from '@/components/goodsCascader'
-import Profile from '@/components/profile'
 // import GoodsBrief from '@/components/goodsBrief'
 import goodsIndexTemple from '@/components/goodsIndexTemple'
+import IndexMain from '@/components/indexMain'
 export default {
   name: 'index',
   components: {
-    Profile,
-    GoodCascader,
+    IndexMain,
     Search,
-    Title,
+    mallTitle,
     goodsIndexTemple
   },
   data () {
     return {
-      goodsRecommend: ['https://img13.360buyimg.com/da/s1180x940_jfs/t1/147280/6/10614/56058/5f8551b4Efdb27ec4/2730f7c703b0c9bc.jpg.webp']
     }
   }
 }
@@ -63,5 +44,11 @@ export default {
 <style scoped>
 .image{
   display: inline;
+}
+.marginTop10{
+  margin-top: 10px;
+}
+.border{
+  border: 1px solid red;
 }
 </style>

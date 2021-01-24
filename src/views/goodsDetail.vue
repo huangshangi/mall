@@ -1,15 +1,17 @@
 <template>
-  <mall-title></mall-title>
   <el-row>
-    <el-col :offset="3" :span="21">
-      <search/>
+    <el-col :offset="3" :span="18"><mall-title/></el-col>
+  </el-row>
+  <el-row class="marginTop10">
+    <el-col :offset="3" :span="18">
+      <search :search="true"/>
     </el-col>
   </el-row>
 
 <!--  导航栏-->
-  <nav-template/>
+  <nav-template class="marginTop10" :header-show="true"/>
 <!--商品详细信息-->
-  <el-row>
+  <el-row class="marginTop10">
 <!--  商品图片  -->
     <el-col :offset="3" :span="7">
       <el-row>
@@ -42,14 +44,14 @@
       </el-form>
       <el-row class="goodsDetailFormItemTitle goodsDetailForm">
         <el-col :span="8">
-          <el-button>加入购物车</el-button>
+          <el-button class="buttonBuyNow">立即购买</el-button>
         </el-col>
         <el-col :span="8">
-          <el-button>立即购买</el-button>
+          <el-button class="buttonAddCart">加入购物车</el-button>
         </el-col>
       </el-row>
       <el-row class="goodsDetailForm">
-        <el-col :span="12" ><el-button>咨询商家</el-button></el-col>
+        <el-col :span="12" ><el-button class="buttonBuyNow buttonAsk">咨询商家</el-button></el-col>
       </el-row>
 
     </el-col>
@@ -178,5 +180,22 @@ export default {
   font-size: 18px;
   font-weight: bold;
   padding: 10px;
+}
+.marginTop10{
+  margin-top: 10px;
+}
+.buttonBuyNow,.buttonBuyNow:active{
+  background-color: #ecf5ff ;
+  color: #409eff ;
+}
+.buttonBuyNow:active{
+  /*border: transparent;*/
+}
+.buttonAddCart,.buttonAddCart:focus,.buttonAddCart:hover,.buttonAddCart:active{
+  background-color: #409eff ;
+  color: white;
+}
+.buttonAsk{
+  width: 100% ;
 }
 </style>
