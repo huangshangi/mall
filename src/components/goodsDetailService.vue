@@ -23,6 +23,11 @@
         </el-row>
         <el-row>
           <el-col :offset="1" :span="23">
+            <tarbar-temp/>
+          </el-col>
+        </el-row>
+        <el-row>
+          <el-col :offset="1" :span="23">
             <comment-item/>
           </el-col>
         </el-row>
@@ -38,9 +43,10 @@
 <script>
 import EvaluateTarbar from '@/components/evaluateTarbar'
 import CommentItem from '@/components/commentItem'
+import TarbarTemp from '@/components/tarbarTemp'
 export default {
   name: 'goodsDetailService',
-  components: { CommentItem, EvaluateTarbar }
+  components: { TarbarTemp, CommentItem, EvaluateTarbar }
 }
 </script>
 

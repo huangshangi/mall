@@ -1,13 +1,13 @@
 <template>
-  <goods-brief/>
+  <buyer-back-temp/>
 </template>
 
 <script>
 
-import GoodsBrief from '@/components/goodsBrief'
+import BuyerBackTemp from '@/components/BuyerBackTemp'
 export default {
   name: 'test-parent',
-  components: { GoodsBrief }
+  components: { BuyerBackTemp }
 }
 </script>
 

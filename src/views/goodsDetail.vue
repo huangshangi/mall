@@ -12,51 +12,10 @@
   <nav-template class="marginTop10" :header-show="true"/>
 <!--商品详细信息-->
   <el-row class="marginTop10">
-<!--  商品图片  -->
-    <el-col :offset="3" :span="7">
-      <el-row>
-        <el-image class="border goodsDetailImage" :src="currentSrc"/>
-      </el-row>
-      <el-row>
-        <el-col :span="4" v-for="(item,index) in images" :key="index" class="thumbnail" :class="{'thumbnail-sele': index === currentPicIndex}">
-          <el-image  :src="item" @mouseover="goodsDetailImageChange(index)"/>
-        </el-col>
-      </el-row>
-    </el-col>
-<!--    商品介绍 价格-->
-    <el-col :offset="1" :span="10">
-      <el-row><div class="goods-title">移动联通电信4G手机 双卡双待Apple iPhone 11 (A2223) 128GB 黑色 移动联通电信4G手机 双卡双待</div></el-row>
-      <el-form label-position="left" label-width="160px" class="goodsDetailForm">
-        <el-form-item class="goodsDetailFormItemTitle" label="价&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;格">
-          <label class="goodsDetailFormItemContent">￥4799元</label>
-        </el-form-item>
-        <el-form-item class="goodsDetailFormItemTitle" label="订单平均响应时间">
-          <label class="goodsDetailFormItemContent"> 17分钟</label>
-        </el-form-item>
-        <el-form-item class="goodsDetailFormItemTitle" label="订单平均完成时间">
-          <label class="goodsDetailFormItemContent">2天</label>
-        </el-form-item>
-        <el-form-item class="goodsDetailFormItemTitle" label="数&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;量">
-          <div class="">
-            <el-input-number v-model="num" @change="handleChange"  label="描述文字"></el-input-number>
-          </div>
-        </el-form-item>
-      </el-form>
-      <el-row class="goodsDetailFormItemTitle goodsDetailForm">
-        <el-col :span="8">
-          <el-button class="buttonBuyNow">立即购买</el-button>
-        </el-col>
-        <el-col :span="8">
-          <el-button class="buttonAddCart">加入购物车</el-button>
-        </el-col>
-      </el-row>
-      <el-row class="goodsDetailForm">
-        <el-col :span="12" ><el-button class="buttonBuyNow buttonAsk">咨询商家</el-button></el-col>
-      </el-row>
-
+    <el-col :offset="3" :span="18">
+      <goods-detail-main :show-evalute="false"/>
     </el-col>
   </el-row>
-
 <!--  下方店铺.评论等-->
   <el-row>
     <el-col :offset="3" :span="3" class="border">
@@ -97,9 +56,10 @@ import mallTitle from '@/components/title'
 import GoodsDetailService from '@/components/goodsDetailService'
 import NavTemplate from '@/components/navTemplate'
 import StoreBriefInformation from '@/components/storeBriefInformation'
+import GoodsDetailMain from '@/components/goodsDetailMain'
 export default {
   name: 'goodsDetail',
-  components: { StoreBriefInformation, NavTemplate, GoodsDetailService, Search, mallTitle },
+  components: { GoodsDetailMain, StoreBriefInformation, NavTemplate, GoodsDetailService, Search, mallTitle },
   methods: {
     goodsDetailImageChange (index) {
       this.currentPicIndex = index

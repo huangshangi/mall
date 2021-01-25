@@ -11,9 +11,11 @@
 <!--  <shoppingCart/>-->
 <!--  <tarbar-temp/>-->
 <!--  <GoodsStore/>-->
-  <demand-require/>
+<!--  <demand-require/>-->
+<!--  <publish-evaluate/>-->
+<!--  <goods-detail/>-->
+  <test-parent/>
 </template>
-
 <script>
 // import index from '@/views/index'
 // import goodsIndexTemple from '@/components/goodsIndexTemple'
@@ -30,9 +32,12 @@
 // import shoppingCart from '@/views/shoppingCart'
 // import SettingOrder from '@/views/settingOrder'
 // import shoppingCart from '@/views/shoppingCart'
-import DemandRequire from '@/views/demandRequire'
+// import DemandRequire from '@/views/demandRequire'
+// import publishEvaluate from '@/views/publishEvaluate'
+
+import TestParent from '@/components/test-parent'
 export default {
-  components: { DemandRequire }
+  components: { TestParent }
 }
 </script>
 

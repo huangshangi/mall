@@ -2,7 +2,7 @@
   <div class="allDiv border">
     <ul>
       <li @click="tabClicked(index)" v-for="(item,index) in items" :key="index">
-        <a href="#none" :class="{ aVisited: index === currentIndex,  aUnvisited: index !== currentIndex}">{{item}}</a>
+        <a class="tarbarA" href="#none" :class="{ aVisited: index === currentIndex}">{{item}}</a>
       </li>
       <li class="checkbox"><slot><el-checkbox>只看当前商品评价</el-checkbox></slot></li>
       <li class="dropdown">
@@ -28,12 +28,17 @@ export default {
   data () {
     return {
       items: ['全部评价', '晒图', '视频晒单', '好评', '中评', '差评'],
-      currentIndex: -1
+      currIndex: -1
+    }
+  },
+  computed: {
+    currentIndex () {
+      return this.currIndex
     }
   },
   methods: {
     tabClicked (index) {
-      this.currentIndex = index
+      this.currIndex = index
       console.log(index)
     }
   }
@@ -43,7 +48,7 @@ export default {
 <style scoped>
 .allDiv{
   position: relative;
-  width: 1000px;
+  width: 100%;
   text-align: left;
 }
 .border{
@@ -77,13 +82,21 @@ export default {
 .allDiv ul li a{
   text-decoration: none;
 }
-
+/*.allDiv ul li a{*/
+/*  color: #606266;*/
+/*}*/
+.tarbarA{
+  color: #606266;;
+}
+.tarbarA:focus,.tarbarA:hover{
+  color: #409eff;
+}
 .aUnvisited{
-  color: #666666;
+  /*color: #666666;*/
 }
 
 .aVisited{
-  color: red;
+  color: #66b1ff;
 }
 
 </style>
