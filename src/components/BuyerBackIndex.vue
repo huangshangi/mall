@@ -35,27 +35,36 @@
       </el-col>
     </el-row>
 <!--  我的订单进展-->
-    <el-row>
-      <el-col :span="1"/>
-      <el-col :span="22">
-        <el-row class="border flexDiv">
-          <el-col :span="4" class="mineOrder">
-            <span class="middleVertical">我的订单</span>
-          </el-col>
-          <el-col :offset="16" :span="4" class="allOrder">
-            <el-button class="noborderButton middleVerticalContent">全部订单</el-button>
-          </el-col>
-        </el-row>
-      </el-col>
-    </el-row>
+    <div>
+      <el-row>
+        <el-col :span="1"/>
+        <el-col :span="22">
+          <el-row class="flexDiv">
+            <el-col :span="4" class="mineOrder">
+              <span class="middleVertical">我的订单</span>
+            </el-col>
+            <el-col :offset="16" :span="4" class="allOrder">
+              <el-button class="noborderButton middleVerticalContent">全部订单</el-button>
+            </el-col>
+          </el-row>
+        </el-col>
+      </el-row>
+      <el-row>
+        <el-col :span="1"/>
+        <el-col :span="22">
+          <buyer-order-temp/>
+        </el-col>
+      </el-row>
+    </div>
   </div>
 </template>
 
 <script>
 import BuyerBackImageTemp from '@/components/BuyerBackImageTemp'
+import BuyerOrderTemp from '@/components/BuyerOrderTemp'
 export default {
   name: 'BuyerBackIndex',
-  components: { BuyerBackImageTemp }
+  components: { BuyerOrderTemp, BuyerBackImageTemp }
 }
 </script>
 
