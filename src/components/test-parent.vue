@@ -1,13 +1,14 @@
 <template>
-  <buyer-back-temp/>
+<!--  <buyer-back-temp/>-->
+  <search-by-conditon/>
 </template>
 
 <script>
-
-import BuyerBackTemp from '@/components/BuyerBackTemp'
+// import BuyerBackTemp from '@/components/BuyerBackTemp'
+import SearchByConditon from '@/components/searchByConditon'
 export default {
   name: 'test-parent',
-  components: { BuyerBackTemp }
+  components: { SearchByConditon }
 }
 </script>
 
