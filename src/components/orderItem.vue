@@ -1,7 +1,8 @@
 <template>
+<!-- type类型 1-》购物车 2-》结算订单 3-》订单详细信息 -->
   <div>
-    <el-row class="alginCenter">
-      <el-col :span="1" v-if="shoppingCart">
+    <el-row class="alginCenter" v-if="type !== 3">
+      <el-col :span="1" v-if="type === 1">
         <el-checkbox></el-checkbox>
       </el-col>
       <el-col :span="10" class="alginleft">
@@ -9,7 +10,7 @@
       </el-col>
     </el-row>
     <el-row class="alginCenter">
-      <el-col :span="1" class="verticalCenter" v-if="shoppingCart">
+      <el-col :span="1" class="verticalCenter" v-if="type === 1">
         <el-checkbox></el-checkbox>
       </el-col>
       <el-col :span="2" class="verticalCenter">
@@ -23,19 +24,23 @@
         <span>￥3059.00</span>
       </el-col>
       <el-col :span="6" class="verticalCenter">
-        <el-input-number :min="1" :max="10" label="描述文字"></el-input-number>
+        <el-input-number :min="1" :max="10" label="描述文字" v-if="type !== 3 "></el-input-number>
+        <span v-else>1</span>
       </el-col>
-      <el-col :span="2" class="verticalCenter"  v-if="shoppingCart">
+      <el-col :span="2" class="verticalCenter"  v-if="type === 1">
         ￥3059.00
       </el-col>
-      <el-col :span="2" class="verticalCenter" v-if="shoppingCart">
+      <el-col :span="2" class="verticalCenter" v-if="type === 1">
         <el-button>删除</el-button>
       </el-col>
-      <el-col :span="3" class="verticalCenter" v-if="!shoppingCart">
+      <el-col :span="3" class="verticalCenter" v-if="type === 2">
         ￥30569.00
       </el-col>
+      <el-col :span="4" class="verticalCenter" v-if="type === 3">
+        <span>交易成功</span>
+      </el-col>
     </el-row>
-    <div v-if="!shoppingCart">
+    <div v-if="type === 2">
       <el-row class="alginCenter">
         <el-col :span="5" class="alginleft verticalCenter"><el-checkbox>手机服务 贴膜+导数据</el-checkbox></el-col>
         <el-col :span="6" class="verticalCenter"/>
@@ -64,7 +69,7 @@ export default {
     }
   },
   props: {
-    shoppingCart: Boolean
+    type: Number
   }
 }
 </script>
@@ -78,6 +83,6 @@ export default {
   text-align: left;
 }
 .verticalCenter{
-  margin: auto;
+  margin: auto 0px;
 }
 </style>
