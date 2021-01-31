@@ -14,8 +14,8 @@
 <!--  <demand-require/>-->
 <!--  <publish-evaluate/>-->
 <!--  <goods-detail/>-->
-<!--  <test-parent/>-->
-  <order-detail/>
+  <test-parent/>
+<!--  <order-detail/>-->
 </template>
 <script>
 // import index from '@/views/index'
@@ -35,10 +35,10 @@
 // import shoppingCart from '@/views/shoppingCart'
 // import DemandRequire from '@/views/demandRequire'
 // import publishEvaluate from '@/views/publishEvaluate'
-// import TestParent from '@/components/test-parent'
-import OrderDetail from '@/views/orderDetail'
+import TestParent from '@/components/test-parent'
+// import OrderDetail from '@/views/orderDetail'
 export default {
-  components: { OrderDetail }
+  components: { TestParent }
 }
 </script>
 

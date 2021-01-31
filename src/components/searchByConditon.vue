@@ -26,7 +26,7 @@
                 :value="item.value">
             </el-option>
           </el-select></el-col>
-        <el-col :span="8"><label>成交时间</label>
+        <el-col :span="10"><label>成交时间</label>
           <el-time-select
               placeholder="起始时间"
               v-model="startTime"
@@ -43,7 +43,7 @@
               end='18:30'
               :minTime="startTime">
           </el-time-select></el-col>
-        <el-col :span="8"><div><label>买家昵称</label>
+        <el-col :span="6"><div><label>买家昵称</label>
           <el-input placeholder="请输入内容" style="width: 80%"></el-input></div>
         </el-col>
       </el-row>
@@ -57,7 +57,7 @@
                 :value="item.value">
             </el-option>
           </el-select></el-col>
-        <el-col :span="8"><label>交易状态</label>
+        <el-col :span="10"><label>交易状态</label>
           <el-select v-model="value" placeholder="请选择">
             <el-option
                 v-for="item in options"
@@ -66,7 +66,7 @@
                 :value="item.value">
             </el-option>
           </el-select></el-col>
-        <el-col :span="8"><label>售后服务</label>
+        <el-col :span="6"><label>售后服务</label>
           <el-select v-model="value" placeholder="请选择">
             <el-option
                 v-for="item in options"
