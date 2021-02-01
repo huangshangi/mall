@@ -1,10 +1,10 @@
 <template>
-  <div class="border">
-    <el-row>
+  <div class="border allDiv">
+    <el-row style="position: relative;">
       <el-col :span="3"><div class="center"><p>23063077</p></div></el-col>
       <el-col :span="8">
-        <div class="center">
-          <a href="#">冬季窗户密封保温膜保暖窗帘防风帘冬天双层条封防寒冬季窗户密封保温膜保暖窗帘防风帘冬天双层条封防寒</a>
+        <div style="padding-top: 5px">
+          <a href="#" class="goodsLink">冬季窗户密封保温膜保暖窗帘防风帘冬天双层条封防寒冬季窗户密封保温膜保暖窗帘防风帘冬天双层条封防寒</a>
           <p><em>15</em>元</p>
         </div>
       </el-col>
@@ -28,8 +28,23 @@ export default {
 
 <style scoped>
 .center{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
 }
 .border{
   border: 1px solid red;
+}
+.allDiv{
+  text-align: left;
+}
+.goodsLink{
+  color: #606266;
+  text-decoration: none;
+}
+.goodsLink:hover{
+  color: #409eff;
+  text-decoration: underline;
 }
 </style>
