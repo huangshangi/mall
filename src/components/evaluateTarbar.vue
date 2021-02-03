@@ -32,7 +32,7 @@
       </el-col>
     </el-row>
 
-    <el-row class="marginTop5">
+    <el-row class="marginTop5" v-if="false">
       <el-col :span="22">
         <div class="evaluateDivLabel">
           <el-tag effect="dark">好评</el-tag>
