@@ -3,7 +3,7 @@
     <el-row style="position: relative">
       <div :style="{'display': hover?'block':'none'}"  @mouseover="deleteIn()" @mouseout="deleteOut()"><a class="delete">删除</a></div>
       <el-image @mouseover="imageIn()" @mouseout="imageOut()" src="https://homesitetask.zbjimg.com/homesite%2Ftask%2FMG%E5%8A%A8%E7%94%BB50.png%2Forigine%2F7e600c76-bb7d-4c34-b13d-3c4cf1dd5b5a"></el-image>
-      <div :style="{'display': hover?'block':'none'}" @mouseover="storeIn()" @mouseout="storeOut()"><a class="enterStore">进入店铺</a></div>
+      <div v-if="!history" :style="{'display': hover?'block':'none'}" @mouseover="storeIn()" @mouseout="storeOut()"><a class="enterStore">进入店铺</a></div>
     </el-row>
     <el-row>
       <span class="content left"><a href="#">二维Flash飞碟说驻真二维Flash飞碟说驻真二维Flash飞碟说驻真</a></span>
@@ -18,6 +18,9 @@
 <script>
 export default {
   name: 'BuyerBackImageTemp',
+  props: {
+    history: Boolean
+  },
   methods: {
     imageIn () {
       this.imageHover = true
