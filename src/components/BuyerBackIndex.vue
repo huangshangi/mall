@@ -80,41 +80,8 @@
                 <el-button class="noborderButton middleVerticalContent">更多</el-button>
               </el-col>
             </el-row>
-            <div >
-              <el-row>
-                <el-col :span="6" class="feedbackquestion" :offset="1"><span>您遇到了什么问题?</span></el-col>
-                <el-col :span="4" v-for="(item,index) in feedbackType" :key="index">
-                  <el-button class="feedbackButton" :class="{'feedbackButtonsele': index === currentIndex}" @click="feedbackClick(index)"><span>{{ item }}</span></el-button>
-                </el-col>
-              </el-row>
-              <el-row>
-                <el-col :span="23" class="middleVertical">
-                  <el-input type="textarea" :rows="4" placeholder="请描述您的建议,我们将及时反馈,您一颗添加图片更形象描述" v-model="textarea"></el-input>
-                </el-col>
-              </el-row>
-              <el-row>
-                <el-col :span="12">
-                  <el-upload type="margin-left:10px"
-                      class="upload-demo"
-                      action="https://jsonplaceholder.typicode.com/posts/"
-                      :on-preview="handlePreview"
-                      :on-remove="handleRemove"
-                      :before-remove="beforeRemove"
-                      multiple
-                      :limit="3"
-                      :on-exceed="handleExceed"
-                      :file-list="fileList"
-                  >
-                    <el-button size="small" type="primary">点击上传</el-button>
-                    <template #tip>
-                      <div class="el-upload__tip" style="display: inline">只能上传 jpg/png 文件，且不超过 500kb</div>
-                    </template>
-                  </el-upload>
-                </el-col>
-                <el-col :offset="8" :span="4">
-                  <el-button type="primary" size="small">提交</el-button>
-                </el-col>
-              </el-row>
+            <div>
+              <buyer-back-feedback/>
             </div>
           </div>
         </el-col>
@@ -126,9 +93,10 @@
 <script>
 import BuyerBackImageTemp from '@/components/BuyerBackImageTemp'
 import BuyerOrderTemp from '@/components/BuyerOrderTemp'
+import BuyerBackFeedback from '@/components/BuyerBackFeedback'
 export default {
   name: 'BuyerBackIndex',
-  components: { BuyerOrderTemp, BuyerBackImageTemp },
+  components: { BuyerBackFeedback, BuyerOrderTemp, BuyerBackImageTemp },
   data () {
     return {
       currentIndex: -1,

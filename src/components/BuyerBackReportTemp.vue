@@ -1,10 +1,9 @@
 <template>
   <div>
-    <p style="margin: 10px;text-align: left">我的退款</p>
-    <buyer-back-refund-navbar/>
-    <buyer-back-refund-title/>
+    <p style="margin: 20px;text-align: left">我的举报</p>
+    <buyer-back-report-title/>
     <template v-for="item in 10" :key="item">
-      <buyer-back-refund-item/>
+      <buyer-back-report-item/>
     </template>
     <el-pagination
         background
@@ -16,16 +15,16 @@
         layout="total, sizes, prev, pager, next, jumper"
         :total="400">
     </el-pagination>
+
   </div>
 </template>
 
 <script>
-import BuyerBackRefundNavbar from '@/components/BuyerBackRefundNavbar'
-import BuyerBackRefundTitle from '@/components/BuyerBackRefundTitle'
-import BuyerBackRefundItem from '@/components/BuyerBackRefundItem'
+import BuyerBackReportTitle from '@/components/BuyerBackReportTitle'
+import BuyerBackReportItem from '@/components/BuyerBackReportItem'
 export default {
-  name: 'BuyerBackRefundTemp',
-  components: { BuyerBackRefundItem, BuyerBackRefundTitle, BuyerBackRefundNavbar }
+  name: 'BuyerBackReportTemp',
+  components: { BuyerBackReportItem, BuyerBackReportTitle }
 }
 </script>
 

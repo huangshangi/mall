@@ -12,7 +12,11 @@
 <!--  <BuyerBackHistoryTemp/>-->
 <!--  <buyer-back-refund-item/>-->
 <!--  <buyer-back-refund-navbar/>-->
-  <buyer-back-refund-temp/>
+<!--  <buyer-back-refund-temp/>-->
+<!--  <buyer-back-report-temp/>-->
+<!--  <buyer-back-feed-item/>-->
+  <buyer-back-feed-temp/>
+<!--  <buyer-back-feedback/>-->
 </template>
 
 <script>
@@ -29,10 +33,14 @@
 // import BuyerBackHistoryTemp from '@/components/BuyerBackHistoryTemp'
 // import BuyerBackRefundItem from '@/components/BuyerBackRefundItem'
 // import BuyerBackRefundNavbar from '@/components/BuyerBackRefundNavbar'
-import BuyerBackRefundTemp from '@/components/BuyerBackRefundTemp'
+// import BuyerBackRefundTemp from '@/components/BuyerBackRefundTemp'
+// import BuyerBackReportTemp from '@/components/BuyerBackReportTemp'
+// import BuyerBackFeedItem from '@/components/BuyerBackFeedItem'
+import BuyerBackFeedTemp from '@/components/BuyerBackFeedTemp'
+// import BuyerBackFeedback from '@/components/BuyerBackFeedback'
 export default {
   name: 'test-parent',
-  components: { BuyerBackRefundTemp }
+  components: { BuyerBackFeedTemp }
 }
 </script>
 
