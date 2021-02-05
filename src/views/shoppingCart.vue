@@ -16,6 +16,7 @@ import mallTitle from '@/components/title'
 import Search from '@/components/search'
 export default {
   name: 'shoppingCart',
+
   components: { mallTitle, shoppingCartMain, Search }
 }
 </script>
