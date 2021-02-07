@@ -15,8 +15,13 @@
 <!--  <buyer-back-refund-temp/>-->
 <!--  <buyer-back-report-temp/>-->
 <!--  <buyer-back-feed-item/>-->
-  <buyer-back-feed-temp/>
+<!--  <buyer-back-feed-temp/>-->
 <!--  <buyer-back-feedback/>-->
+<!--  <consult-item/>-->
+<!--  <consult-history/>-->
+<!--  <refund-detail/>-->
+<!--  <consult-title/>-->
+  <refund-detail/>
 </template>
 
 <script>
@@ -36,11 +41,16 @@
 // import BuyerBackRefundTemp from '@/components/BuyerBackRefundTemp'
 // import BuyerBackReportTemp from '@/components/BuyerBackReportTemp'
 // import BuyerBackFeedItem from '@/components/BuyerBackFeedItem'
-import BuyerBackFeedTemp from '@/components/BuyerBackFeedTemp'
+// import BuyerBackFeedTemp from '@/components/BuyerBackFeedTemp'
+// import ConsultItem from '@/components/consultItem'
 // import BuyerBackFeedback from '@/components/BuyerBackFeedback'
+// import ConsultHistory from './consultHistory'
+// import RefundDetail from './refundDetail'
+// import ConsultTitle from './consultTitle'
+import RefundDetail from '../views/refundDetail'
 export default {
   name: 'test-parent',
-  components: { BuyerBackFeedTemp }
+  components: { RefundDetail }
 }
 </script>
 
