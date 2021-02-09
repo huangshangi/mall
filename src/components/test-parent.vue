@@ -21,7 +21,9 @@
 <!--  <consult-history/>-->
 <!--  <refund-detail/>-->
 <!--  <consult-title/>-->
-  <refund-detail/>
+<!--  <refund-detail/>-->
+<!--  <refund-info/>-->
+  <refund-detail-step-three/>
 </template>
 
 <script>
@@ -47,10 +49,13 @@
 // import ConsultHistory from './consultHistory'
 // import RefundDetail from './refundDetail'
 // import ConsultTitle from './consultTitle'
-import RefundDetail from '../views/refundDetail'
+// import RefundDetail from '../views/refundDetail'
+// import RefundInfo from './refundDetail/refundInfo'
+// import RefundDetailStepTwo from './refundDetail/refundDetailStepTwo'
+import RefundDetailStepThree from './refundDetail/refundDetailStepThree'
 export default {
   name: 'test-parent',
-  components: { RefundDetail }
+  components: { RefundDetailStepThree }
 }
 </script>
 
