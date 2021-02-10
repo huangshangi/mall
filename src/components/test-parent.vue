@@ -23,7 +23,8 @@
 <!--  <consult-title/>-->
 <!--  <refund-detail/>-->
 <!--  <refund-info/>-->
-  <refund-detail-step-three/>
+  <refund-detail-step-one/>
+<!--  <report-detail-step-three/>-->
 </template>
 
 <script>
@@ -52,10 +53,11 @@
 // import RefundDetail from '../views/refundDetail'
 // import RefundInfo from './refundDetail/refundInfo'
 // import RefundDetailStepTwo from './refundDetail/refundDetailStepTwo'
-import RefundDetailStepThree from './refundDetail/refundDetailStepThree'
+import RefundDetailStepOne from './refundDetail/refundDetailStepOne'
+// import ReportDetailStepThree from './reportDetail/reportDetailStepThree'
 export default {
   name: 'test-parent',
-  components: { RefundDetailStepThree }
+  components: { RefundDetailStepOne }
 }
 </script>
 

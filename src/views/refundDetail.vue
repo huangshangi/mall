@@ -18,7 +18,7 @@
         <consult-history/>
       </el-col>
       <el-col :span="6">
-        <right-refund-detail/>
+        <goods-digest-info :detail="true" :refund="true" :report="false"/>
       </el-col>
     </el-row>
   </div>
@@ -26,11 +26,11 @@
 
 <script>
 import ConsultTitle from '../components/consultTitle'
-import RightRefundDetail from '../components/rightRefundDetail'
+import GoodsDigestInfo from '../components/goodsDigestInfo'
 import ConsultHistory from '../components/consultHistory'
 export default {
   name: 'refundDetail',
-  components: { ConsultHistory, RightRefundDetail, ConsultTitle }
+  components: { GoodsDigestInfo, ConsultHistory, ConsultTitle }
 }
 </script>
 

@@ -1,15 +1,15 @@
 <template>
-  <detail-step-temp :refund="true" :report="false" :detail="true">
+  <detail-step-temp :detail="true" :report="true" :refund="false">
     <template v-slot:content>
       <div class="title">
-        <p class="info">退款成功</p>
-        <p class="time">退款成功时间：2021-02-02 13:30:44</p>
+        <p class="info">投诉成功</p>
+        <p class="time">投诉成功时间：2021-02-02 13:30:44</p>
         <div class="line"></div>
-        <p class="result">退款总金额：￥24.33</p>
+        <p class="result">商家已被封禁</p>
       </div>
     </template>
     <template v-slot:digest-title>
-      <p>退款详情</p>
+      <div>投诉详情</div>
     </template>
   </detail-step-temp>
 </template>
@@ -17,7 +17,7 @@
 <script>
 import DetailStepTemp from '../detailStepTemp'
 export default {
-  name: 'refundDetailStepThree',
+  name: 'reportDetailStepThree',
   components: { DetailStepTemp }
 }
 </script>

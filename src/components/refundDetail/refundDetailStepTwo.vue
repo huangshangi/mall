@@ -1,7 +1,7 @@
 <template>
   <div>
-   <refund-detail-step-temp>
-     <slot>
+   <detail-step-temp :refund="false" :report="true" :detail="true">
+     <template v-slot:content>
        <div style="text-align: left">
          <div class="refundTitle">
            <p class="digest">请等待商家处理</p>
@@ -23,16 +23,16 @@
            <a href="#" class="repealApp">撤销申请</a>
          </div>
        </div>
-     </slot>
-   </refund-detail-step-temp>
+     </template>
+   </detail-step-temp>
   </div>
 </template>
 
 <script>
-import RefundDetailStepTemp from './refundDetailStepTemp'
+import DetailStepTemp from '../detailStepTemp'
 export default {
   name: 'refundDetailStepTwo',
-  components: { RefundDetailStepTemp }
+  components: { DetailStepTemp }
 }
 </script>
 
