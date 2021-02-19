@@ -16,6 +16,8 @@
 <!--  <goods-detail/>-->
   <test-parent/>
 <!--  <order-detail/>-->
+<!--  <confirm-receipt/>-->
+<!--  <receipt-status/>-->
 </template>
 <script>
 // import index from '@/views/index'
@@ -37,6 +39,8 @@
 // import publishEvaluate from '@/views/publishEvaluate'
 import TestParent from '@/components/test-parent'
 // import OrderDetail from '@/views/orderDetail'
+// import ConfirmReceipt from './views/confirmReceipt'
+// import receiptStatus from './views/receiptStatus'
 export default {
   components: { TestParent }
 }

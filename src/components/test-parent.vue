@@ -1,5 +1,5 @@
 <template>
-<!--  <buyer-back-temp/>-->
+  <buyer-back-temp/>
 <!--  <search-by-conditon/>-->
 <!--  <buyer-order-temp/>-->
 <!--  <buyer-back-order/>-->
@@ -23,12 +23,15 @@
 <!--  <consult-title/>-->
 <!--  <refund-detail/>-->
 <!--  <refund-info/>-->
-  <refund-detail-step-one/>
+<!--  <refund-detail-step-one/>-->
+<!--  <receive-and-order-template/>-->
 <!--  <report-detail-step-three/>-->
+<!--  <seller-back-temp/>-->
 </template>
 
 <script>
-// import BuyerBackTemp from '@/components/BuyerBackTemp'
+import BuyerBackTemp from '@/components/BuyerBackTemp'
+// import SellerBackTemp from './sellerBackTemp'
 // import SearchByConditon from '@/components/searchByConditon'
 // import BuyerOrderTemp from '@/components/BuyerOrderTemp'
 // import BuyerBackOrder from '@/components/BuyerBackOrder'
@@ -53,11 +56,12 @@
 // import RefundDetail from '../views/refundDetail'
 // import RefundInfo from './refundDetail/refundInfo'
 // import RefundDetailStepTwo from './refundDetail/refundDetailStepTwo'
-import RefundDetailStepOne from './refundDetail/refundDetailStepOne'
+// import RefundDetailStepOne from './refundDetail/refundDetailStepOne'
 // import ReportDetailStepThree from './reportDetail/reportDetailStepThree'
+// import receiveAndOrderTemplate from './receiveAndOrderTemplate'
 export default {
   name: 'test-parent',
-  components: { RefundDetailStepOne }
+  components: { BuyerBackTemp }
 }
 </script>
 
