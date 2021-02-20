@@ -17,7 +17,7 @@
 </template>
 
 <script>
-import mallTitle from '../components/title'
+import mallTitle from '../components/mallTitle'
 import Search from '../components/search'
 import ReceiptStatusTemp from '../components/receiptStatusTemp'
 export default {

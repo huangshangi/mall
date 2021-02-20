@@ -15,6 +15,7 @@
 <!--  <publish-evaluate/>-->
 <!--  <goods-detail/>-->
   <test-parent/>
+<!--  <trade-hall/>-->
 <!--  <order-detail/>-->
 <!--  <confirm-receipt/>-->
 <!--  <receipt-status/>-->
@@ -41,6 +42,7 @@ import TestParent from '@/components/test-parent'
 // import OrderDetail from '@/views/orderDetail'
 // import ConfirmReceipt from './views/confirmReceipt'
 // import receiptStatus from './views/receiptStatus'
+// import TradeHall from './views/tradeHall'
 export default {
   components: { TestParent }
 }

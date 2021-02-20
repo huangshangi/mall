@@ -18,7 +18,7 @@ const routes = [
   {
     path: '/title',
     name: 'Title',
-    component: () => import('../components/title')
+    component: () => import('../components/mallTitle')
   }
 ]
 

@@ -8,8 +8,8 @@
       </el-col>
       <el-col :span="24" v-else>
         <el-menu mode="horizontal" background-color="#0191d8" text-color="#ffffff" >
-          <template v-for="(item,index) in 3" :key="index">
-            <el-menu-item v-if="item.children === undefined" index="index">{{item.title}}</el-menu-item>
+          <template v-for="(item,index) in options" :key="item">
+            <el-menu-item v-if="item.children === undefined" :index="String(index)">{{item.title}}</el-menu-item>
             <el-submenu v-else>
               <template #title>{{item.title}}</template>
               <template v-for="(itemChild,indexChild) in item.children" :key="indexChild">
@@ -30,7 +30,8 @@
 export default {
   name: 'navTemplate',
   props: {
-    headerShow: Boolean
+    headerShow: Boolean,
+    options: Array
   }
 }
 </script>

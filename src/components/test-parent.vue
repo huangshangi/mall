@@ -1,5 +1,9 @@
 <template>
-  <buyer-back-temp/>
+<!--  <trade-hall-card :explain="true"/>-->
+<!--  <trade-hall-progress/>-->
+<!--  <trade-hall-index/>-->
+  <trade-hall-classify/>
+<!--  <buyer-back-temp/>-->
 <!--  <search-by-conditon/>-->
 <!--  <buyer-order-temp/>-->
 <!--  <buyer-back-order/>-->
@@ -30,7 +34,11 @@
 </template>
 
 <script>
-import BuyerBackTemp from '@/components/BuyerBackTemp'
+// import BuyerBackTemp from '@/components/BuyerBackTemp'
+// import TradeHallCard from './tradeHall/tradeHallCard'
+// import TradeHallProgress from './tradeHall/tradeHallProgress'
+// import TradeHallIndex from './tradeHall/tradeHallIndex'
+import TradeHallClassify from './tradeHall/tradeHallClassify'
 // import SellerBackTemp from './sellerBackTemp'
 // import SearchByConditon from '@/components/searchByConditon'
 // import BuyerOrderTemp from '@/components/BuyerOrderTemp'
@@ -61,7 +69,7 @@ import BuyerBackTemp from '@/components/BuyerBackTemp'
 // import receiveAndOrderTemplate from './receiveAndOrderTemplate'
 export default {
   name: 'test-parent',
-  components: { BuyerBackTemp }
+  components: { TradeHallClassify }
 }
 </script>
 
