@@ -20,7 +20,7 @@
 </template>
 
 <script>
-import TradeHallCard from './tradeHallCard'
+import TradeHallCard from './tradeHallModeCard'
 import TradeHallProgress from './tradeHallProgress'
 export default {
   name: 'tradeHallIndex',

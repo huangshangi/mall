@@ -2,7 +2,10 @@
 <!--  <trade-hall-card :explain="true"/>-->
 <!--  <trade-hall-progress/>-->
 <!--  <trade-hall-index/>-->
-  <trade-hall-classify/>
+<!--  <trade-hall-classify/>-->
+<!--  <trade-hall-demand-card/>-->
+<!--  <trade-hall-title/>-->
+  <trade-hall-call-bit/>
 <!--  <buyer-back-temp/>-->
 <!--  <search-by-conditon/>-->
 <!--  <buyer-order-temp/>-->
@@ -38,7 +41,10 @@
 // import TradeHallCard from './tradeHall/tradeHallCard'
 // import TradeHallProgress from './tradeHall/tradeHallProgress'
 // import TradeHallIndex from './tradeHall/tradeHallIndex'
-import TradeHallClassify from './tradeHall/tradeHallClassify'
+// import TradeHallClassify from './tradeHall/tradeHallClassify'
+// import TradeHallDemandCard from './tradeHall/tradeHallDemandCard'
+// import TradeHallTitle from './tradeHall/tradeHallTitle'
+import TradeHallCallBit from './tradeHall/tradeHallTabTemp'
 // import SellerBackTemp from './sellerBackTemp'
 // import SearchByConditon from '@/components/searchByConditon'
 // import BuyerOrderTemp from '@/components/BuyerOrderTemp'
@@ -69,7 +75,7 @@ import TradeHallClassify from './tradeHall/tradeHallClassify'
 // import receiveAndOrderTemplate from './receiveAndOrderTemplate'
 export default {
   name: 'test-parent',
-  components: { TradeHallClassify }
+  components: { TradeHallCallBit }
 }
 </script>
 
