@@ -5,8 +5,10 @@
 <!--  <trade-hall-classify/>-->
 <!--  <trade-hall-demand-card/>-->
 <!--  <trade-hall-title/>-->
-  <trade-hall-call-bit/>
+<!--  <trade-hall-call-bit/>-->
+<!--  <trade-hall-right-nav/>-->
 <!--  <buyer-back-temp/>-->
+<!--  <trade-hall-tab-temp/>-->
 <!--  <search-by-conditon/>-->
 <!--  <buyer-order-temp/>-->
 <!--  <buyer-back-order/>-->
@@ -33,7 +35,7 @@
 <!--  <refund-detail-step-one/>-->
 <!--  <receive-and-order-template/>-->
 <!--  <report-detail-step-three/>-->
-<!--  <seller-back-temp/>-->
+  <seller-back-temp/>
 </template>
 
 <script>
@@ -44,8 +46,9 @@
 // import TradeHallClassify from './tradeHall/tradeHallClassify'
 // import TradeHallDemandCard from './tradeHall/tradeHallDemandCard'
 // import TradeHallTitle from './tradeHall/tradeHallTitle'
-import TradeHallCallBit from './tradeHall/tradeHallTabTemp'
-// import SellerBackTemp from './sellerBackTemp'
+// import TradeHallTabTemp from './tradeHall/tradeHallTabTemp'
+// import TradeHallRightNav from './tradeHall/tradeHallRightNav'
+import SellerBackTemp from './sellerBackTemp'
 // import SearchByConditon from '@/components/searchByConditon'
 // import BuyerOrderTemp from '@/components/BuyerOrderTemp'
 // import BuyerBackOrder from '@/components/BuyerBackOrder'
@@ -75,7 +78,7 @@ import TradeHallCallBit from './tradeHall/tradeHallTabTemp'
 // import receiveAndOrderTemplate from './receiveAndOrderTemplate'
 export default {
   name: 'test-parent',
-  components: { TradeHallCallBit }
+  components: { SellerBackTemp }
 }
 </script>
 
