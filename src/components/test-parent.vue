@@ -2,6 +2,8 @@
 <!--  <trade-hall-card :explain="true"/>-->
 <!--  <trade-hall-progress/>-->
 <!--  <trade-hall-index/>-->
+<!--  <trade-hall-detail-temp/>-->
+  <trade-hall-demand-summary/>
 <!--  <trade-hall-classify/>-->
 <!--  <trade-hall-demand-card/>-->
 <!--  <trade-hall-title/>-->
@@ -35,7 +37,7 @@
 <!--  <refund-detail-step-one/>-->
 <!--  <receive-and-order-template/>-->
 <!--  <report-detail-step-three/>-->
-  <seller-back-temp/>
+<!--  <seller-back-temp/>-->
 </template>
 
 <script>
@@ -43,12 +45,14 @@
 // import TradeHallCard from './tradeHall/tradeHallCard'
 // import TradeHallProgress from './tradeHall/tradeHallProgress'
 // import TradeHallIndex from './tradeHall/tradeHallIndex'
+// import TradeHallDetailTemp from './tradeHall/tradeHallDetailTemp'
+import TradeHallDemandSummary from './tradeHall/tradeHallDemandSummary'
 // import TradeHallClassify from './tradeHall/tradeHallClassify'
 // import TradeHallDemandCard from './tradeHall/tradeHallDemandCard'
 // import TradeHallTitle from './tradeHall/tradeHallTitle'
 // import TradeHallTabTemp from './tradeHall/tradeHallTabTemp'
 // import TradeHallRightNav from './tradeHall/tradeHallRightNav'
-import SellerBackTemp from './sellerBackTemp'
+// import SellerBackTemp from './sellerBackTemp'
 // import SearchByConditon from '@/components/searchByConditon'
 // import BuyerOrderTemp from '@/components/BuyerOrderTemp'
 // import BuyerBackOrder from '@/components/BuyerBackOrder'
@@ -78,7 +82,7 @@ import SellerBackTemp from './sellerBackTemp'
 // import receiveAndOrderTemplate from './receiveAndOrderTemplate'
 export default {
   name: 'test-parent',
-  components: { SellerBackTemp }
+  components: { TradeHallDemandSummary }
 }
 </script>
 

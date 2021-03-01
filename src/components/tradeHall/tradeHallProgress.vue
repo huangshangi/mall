@@ -1,6 +1,6 @@
 <template>
   <div class="allDiv">
-    <div class="titleDiv">
+    <div class="titleDiv" v-if="titleShow">
       招标流程
     </div>
     <div class="progressContent">
@@ -13,7 +13,7 @@
         <el-step title="步骤 3" icon="el-icon-picture"></el-step>
       </el-steps>
     </div>
-    <div class="footer">
+    <div class="footer" v-if="footerShow">
       <div class="footerImage">
         <el-image src="https://as.zbjimg.com/static/nodejs-zbj-bid-api/widget/guide/images/spcial_557b824.png"></el-image>
       </div>
@@ -31,7 +31,11 @@
 
 <script>
 export default {
-  name: 'tradeHallProgress'
+  name: 'tradeHallProgress',
+  props: {
+    titleShow: Boolean,
+    footerShow: Boolean
+  }
 }
 </script>
 
