@@ -1,6 +1,6 @@
 <template>
   <div>
-    <el-row style="position: relative">
+    <el-row style="position: relative;overflow: visible">
       <el-col :span="3"><div class="center">23063077</div></el-col>
       <el-col :span="3"><div class="center">2021-01-24 17:31:50</div></el-col>
       <el-col :span="3"><div class="center">需要logo</div></el-col>
@@ -64,7 +64,7 @@ export default {
       return this.show
     }
   },
-  mounted () {
+  updated () {
     let e = document.getElementsByClassName('progress-div')
     let e2 = document.getElementsByClassName('progress-a')
     if (e2 === undefined || e === undefined) {
@@ -73,7 +73,6 @@ export default {
     e = e[0]
     e2 = e2[0]
     const offestW = e.offsetLeft + e2.offsetLeft
-    console.log(offestW)
     document.getElementById('popwindow' + this.index).style.left = offestW + 'px'
   }
 }
@@ -174,5 +173,8 @@ export default {
 .progress-a{
   color: #606266;
   text-decoration: none;
+}
+.el-tabs >>> .el-tabs__content{
+  overflow: visible;
 }
 </style>

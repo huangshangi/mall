@@ -3,9 +3,12 @@
 <!--  <trade-hall-progress/>-->
 <!--  <trade-hall-index/>-->
 <!--  <trade-hall-detail-temp/>-->
-  <trade-hall-demand-summary/>
+<!--  <trade-hall-demand-summary/>-->
 <!--  <trade-hall-classify/>-->
+<!--  <trade-hall-file-list-temp/>-->
 <!--  <trade-hall-demand-card/>-->
+<!--  <trade-hall-demand-dynamic/>-->
+  <trade-hall-demand-follow-u-p/>
 <!--  <trade-hall-title/>-->
 <!--  <trade-hall-call-bit/>-->
 <!--  <trade-hall-right-nav/>-->
@@ -46,7 +49,10 @@
 // import TradeHallProgress from './tradeHall/tradeHallProgress'
 // import TradeHallIndex from './tradeHall/tradeHallIndex'
 // import TradeHallDetailTemp from './tradeHall/tradeHallDetailTemp'
-import TradeHallDemandSummary from './tradeHall/tradeHallDemandSummary'
+// import TradeHallDemandSummary from './tradeHall/tradeHallDemandSummary'
+// import TradeHallFileListTemp from './tradeHall/tradeHallFileListTemp'
+// import TradeHallDemandDynamic from './tradeHall/tradeHallDemandDynamic'
+import TradeHallDemandFollowUP from './tradeHall/tradeHallDemandFollowUP'
 // import TradeHallClassify from './tradeHall/tradeHallClassify'
 // import TradeHallDemandCard from './tradeHall/tradeHallDemandCard'
 // import TradeHallTitle from './tradeHall/tradeHallTitle'
@@ -82,7 +88,7 @@ import TradeHallDemandSummary from './tradeHall/tradeHallDemandSummary'
 // import receiveAndOrderTemplate from './receiveAndOrderTemplate'
 export default {
   name: 'test-parent',
-  components: { TradeHallDemandSummary }
+  components: { TradeHallDemandFollowUP }
 }
 </script>
 

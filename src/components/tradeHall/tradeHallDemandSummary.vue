@@ -13,15 +13,24 @@
         </div>
         <div class="content-item">
           <span class="item-title">需求类目：</span>
-          <span class="item-value">LOGO</span>
+          <span class="item-value">公众平台开发</span>
         </div>
         <div class="content-item">
-          <span class="item-title">需求类目：</span>
-          <span class="item-value">LOGO</span>
+          <span class="item-title">需求预算：</span>
+          <span class="item-value">￥1000</span>
         </div>
         <div class="content-item">
-          <span class="item-title">需求类目：</span>
-          <span class="item-value">LOGO</span>
+          <span class="item-title">需求描述：</span>
+          <span class="item-value">开发一个小程序</span>
+        </div>
+        <div class="content-item">
+          <span class="item-title">招标要求：</span>
+          <div class="item-value">
+            <div class="card-div">
+              <p class="val">2021-03-08</p>
+              <p class="tit">截止投标</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -38,7 +47,7 @@ export default {
   },
   data () {
     return {
-      detailSpread: false
+      detailSpread: true
     }
   }
 }
@@ -54,7 +63,30 @@ export default {
   overflow: hidden;
 }
 .hideMore{
-  max-height: 155px;
+  max-height: 150px;
+}
+.item-value .card-div{
+  background: #F7FBFF;
+  border: 1px solid #DAECFF;
+  display: inline-block;
+  width: 146px;
+  /*height: 70px;*/
+  box-sizing: border-box;
+  border-radius: 3px;
+  padding-top: 12px;
+  margin-left: 10px;
+  vertical-align: top;
+}
+.item-value .card-div .val{
+  font-size: 16px;
+  color: #2D8CF0;
+  text-align: center;
+  margin-bottom: 3px;
+}
+.item-value .card-div .tit{
+  font-size: 12px;
+  color: #999;
+  text-align: center;
 }
 .detail .title i{
   position: absolute;
