@@ -160,7 +160,7 @@
 </template>
 
 <script>
-import mallTitle from '@/components/title'
+import mallTitle from '@/components/mallTitle'
 import Search from '@/components/search'
 import OrderItem from '@/components/orderItem'
 export default {

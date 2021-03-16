@@ -12,7 +12,7 @@
 
 <script>
 import shoppingCartMain from '@/components/shoppingCartMain'
-import mallTitle from '@/components/title'
+import mallTitle from '@/components/mallTitle'
 import Search from '@/components/search'
 export default {
   name: 'shoppingCart',

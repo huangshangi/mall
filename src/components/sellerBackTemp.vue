@@ -11,9 +11,9 @@
 </template>
 
 <script>
-import BackTitleTemp from './backTitleTemp'
+import BackTitleTemp from './buyerBack/backTitleTemp'
 import SellerBackNav from './sellerBackNav'
-import BuyerBackIndex from './BuyerBackIndex'
+import BuyerBackIndex from './buyerBack/BuyerBackIndex'
 export default {
   name: 'sellerBackTemp',
   components: { BuyerBackIndex, SellerBackNav, BackTitleTemp }

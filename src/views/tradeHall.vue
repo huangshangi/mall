@@ -4,6 +4,7 @@
   <el-row>
     <el-col :offset="3" :span="18">
       <nav-template :header-show="false" :options="navtars"></nav-template>
+      <trade-hall-index/>
     </el-col>
   </el-row>
 </template>
@@ -12,9 +13,10 @@
 import mallTitle from '../components/mallTitle'
 import Search from '../components/search'
 import NavTemplate from '../components/navTemplate'
+import TradeHallIndex from '../components/tradeHall/tradeHallIndex'
 export default {
   name: 'tradeHall',
-  components: { NavTemplate, Search, mallTitle },
+  components: { TradeHallIndex, NavTemplate, Search, mallTitle },
   data () {
     return {
       navtars: [{ title: '首页' }, { title: '招标大厅' }, { title: '比稿大厅' }, { title: '计件大厅' }]

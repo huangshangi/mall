@@ -19,9 +19,13 @@
 <!--  <order-detail/>-->
 <!--  <confirm-receipt/>-->
 <!--  <receipt-status/>-->
+<!--  <index/>-->
+<!--  <setting-order/>-->
+<!--  <refund-detail/>-->
 </template>
 <script>
 // import index from '@/views/index'
+// import Index from './views/index'
 // import goodsIndexTemple from '@/components/goodsIndexTemple'
 // import goodsBrief from '@/components/goodsBrief'
 // import testParent from '@/components/test-parent'
@@ -33,8 +37,9 @@
 // import EvaluteItem from '@/components/evaluteItem'
 // import TarbarTemp from '@/components/tarbarTemp'
 // import CommentItem from '@/components/commentItem'
-// import shoppingCart from '@/views/shoppingCart'
+// import shoppingCart from './views/shoppingCart'
 // import SettingOrder from '@/views/settingOrder'
+// import SettingOrder from './views/settingOrder'
 // import shoppingCart from '@/views/shoppingCart'
 // import DemandRequire from '@/views/demandRequire'
 // import publishEvaluate from '@/views/publishEvaluate'
@@ -43,6 +48,7 @@ import TestParent from '@/components/test-parent'
 // import ConfirmReceipt from './views/confirmReceipt'
 // import receiptStatus from './views/receiptStatus'
 // import TradeHall from './views/tradeHall'
+// import RefundDetail from './views/refundDetail'
 export default {
   components: { TestParent }
 }

@@ -6,9 +6,12 @@
 <!--  <trade-hall-demand-summary/>-->
 <!--  <trade-hall-classify/>-->
 <!--  <trade-hall-file-list-temp/>-->
+<!--  <trade-hall-word-temp/>-->
+<!--  <trade-hall-add-follow-up/>-->
+<!--  <trade-hall-progress-temp/>-->
 <!--  <trade-hall-demand-card/>-->
 <!--  <trade-hall-demand-dynamic/>-->
-  <trade-hall-demand-follow-u-p/>
+<!--  <trade-hall-demand-follow-u-p/>-->
 <!--  <trade-hall-title/>-->
 <!--  <trade-hall-call-bit/>-->
 <!--  <trade-hall-right-nav/>-->
@@ -41,6 +44,9 @@
 <!--  <receive-and-order-template/>-->
 <!--  <report-detail-step-three/>-->
 <!--  <seller-back-temp/>-->
+<!--  <trade-hall-status-bar/>-->
+<!--  <trade-hall-custom-bar/>-->
+  <trade-hall-bidder-temp/>
 </template>
 
 <script>
@@ -51,8 +57,13 @@
 // import TradeHallDetailTemp from './tradeHall/tradeHallDetailTemp'
 // import TradeHallDemandSummary from './tradeHall/tradeHallDemandSummary'
 // import TradeHallFileListTemp from './tradeHall/tradeHallFileListTemp'
+// import TradeHallWordTemp from './tradeHall/tradeHallWordTemp'
+// import TradeHallStatusBar from './tradeHall/tradeHallStatusBar'
+// import TradeHallCustomBar from './tradeHall/tradeHallCustomBar'
+import TradeHallBidderTemp from './tradeHall/tradeHallBidderTemp'
+// import TradeHallAddFollowUp from './tradeHall/tradeHallAddFollowUp'
 // import TradeHallDemandDynamic from './tradeHall/tradeHallDemandDynamic'
-import TradeHallDemandFollowUP from './tradeHall/tradeHallDemandFollowUP'
+// import TradeHallDemandFollowUP from './tradeHall/tradeHallDemandFollowUP'
 // import TradeHallClassify from './tradeHall/tradeHallClassify'
 // import TradeHallDemandCard from './tradeHall/tradeHallDemandCard'
 // import TradeHallTitle from './tradeHall/tradeHallTitle'
@@ -86,9 +97,10 @@ import TradeHallDemandFollowUP from './tradeHall/tradeHallDemandFollowUP'
 // import RefundDetailStepOne from './refundDetail/refundDetailStepOne'
 // import ReportDetailStepThree from './reportDetail/reportDetailStepThree'
 // import receiveAndOrderTemplate from './receiveAndOrderTemplate'
+// import TradeHallProgressTemp from './tradeHall/tradeHallProgressTemp'
 export default {
   name: 'test-parent',
-  components: { TradeHallDemandFollowUP }
+  components: { TradeHallBidderTemp }
 }
 </script>
 

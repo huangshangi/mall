@@ -5,6 +5,8 @@
       <el-col :span="1" v-if="type === 1">
         <el-checkbox></el-checkbox>
       </el-col>
+      <el-col :span="1" class="verticalCenter" v-if="type === 2">
+      </el-col>
       <el-col :span="10" class="alginleft">
         <span>店铺:tiantian专营店</span>
       </el-col>
@@ -12,6 +14,8 @@
     <el-row class="alginCenter">
       <el-col :span="1" class="verticalCenter" v-if="type === 1">
         <el-checkbox></el-checkbox>
+      </el-col>
+      <el-col :span="1" class="verticalCenter" v-if="type === 2">
       </el-col>
       <el-col :span="2" class="verticalCenter">
         <el-image src="https://img.alicdn.com/bao/uploaded/i6/TB15FQphVzqK1RjSZFCzHTbxVXa_025238.jpg_80x80.jpg"/>
@@ -42,6 +46,7 @@
     </el-row>
     <div v-if="type === 2">
       <el-row class="alginCenter">
+        <el-col :span="1"></el-col>
         <el-col :span="5" class="alginleft verticalCenter"><el-checkbox>手机服务 贴膜+导数据</el-checkbox></el-col>
         <el-col :span="6" class="verticalCenter"/>
         <el-col :span="2" class="verticalCenter">￥30659.00</el-col>
@@ -49,8 +54,9 @@
         <el-col :span="3" class="verticalCenter">￥30659.00</el-col>
       </el-row>
       <el-row class="alginCenter">
-        <el-col :span="3">给卖家留言:</el-col>
-        <el-col :span="20">
+        <el-col :span="1"></el-col>
+        <el-col :span="3" style="text-align: left">给卖家留言:</el-col>
+        <el-col :span="19">
           <el-input type="textarea" placeholder="请输入内容" maxlength="30" show-word-limit></el-input>
         </el-col>
       </el-row>

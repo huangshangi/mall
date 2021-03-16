@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import mallTitle from '@/components/title'
+import mallTitle from '@/components/mallTitle'
 import Search from '@/components/search'
 import SettingOrderMain from '@/components/settingOrderMain'
 export default {

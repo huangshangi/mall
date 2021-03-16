@@ -2,7 +2,7 @@
   <div>
     <el-row class="">
       <el-col :span="3">
-        <a href="#"><el-image style="height: 40px" :src="require('../assets/logo.png')"></el-image></a>
+        <a href="#"><el-image style="height: 40px" :src="require('../../assets/logo.png')"></el-image></a>
       </el-col>
       <el-col :span="3" class="display-flex">
         <span class="content">huangshangi</span>

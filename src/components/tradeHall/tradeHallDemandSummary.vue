@@ -192,4 +192,64 @@ export default {
   border: 1px solid red;
   text-align: left;
 }
+.item-value .card-div{
+  background: #F7FBFF;
+  border: 1px solid #DAECFF;
+  display: inline-block;
+  width: 146px;
+  /*height: 70px;*/
+  box-sizing: border-box;
+  border-radius: 3px;
+  padding-top: 12px;
+  margin-left: 10px;
+  vertical-align: top;
+}
+.item-value .card-div .val{
+  font-size: 16px;
+  color: #2D8CF0;
+  text-align: center;
+  margin-bottom: 3px;
+}
+.item-value .card-div .tit{
+  font-size: 12px;
+  color: #999;
+  text-align: center;
+}
+.detail .title i{
+  position: absolute;
+  left: 0;
+  display: inline-block;
+  width: 3px;
+  height: 19px;
+  background: #2D8CF0;
+}
+.detail .title .title-val{
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 24px;
+  font-weight: 700;
+}
+.detail .detail-content{
+  box-sizing: border-box;
+  overflow: hidden;
+  padding: 19px 106px 0 25px;
+}
+.content-item{
+  margin-top: 12px;
+  font-size: 14px;
+  color: #999;
+}
+.item-title{
+  margin-right: 8px;
+  vertical-align: baseline;
+  text-align: right;
+  min-width: 56px;
+  display: inline-block;
+}
+.item-value{
+  display: inline-block;
+  max-width: 680px;
+  color: #333;
+  font-size: 14px;
+}
 </style>
