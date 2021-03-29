@@ -30,7 +30,7 @@
 <script>
 // import BuyerBackTemp from '@/components/BuyerBackTemp'
 import SearchByConditon from '@/components/searchByConditon'
-import BuyerOrderTemp from '@/components/BuyerOrderTemp'
+import BuyerOrderTemp from './BuyerOrderTemp'
 export default {
   name: 'BuyerBackOrder',
   components: { SearchByConditon, BuyerOrderTemp }

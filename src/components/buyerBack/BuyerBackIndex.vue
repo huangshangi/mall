@@ -91,9 +91,9 @@
 </template>
 
 <script>
-import BuyerBackImageTemp from '@/components/BuyerBackImageTemp'
-import BuyerOrderTemp from '@/components/BuyerOrderTemp'
-import BuyerBackFeedback from '@/components/BuyerBackFeedback'
+import BuyerBackImageTemp from './BuyerBackImageTemp'
+import BuyerOrderTemp from './BuyerOrderTemp'
+import BuyerBackFeedback from './BuyerBackFeedback'
 export default {
   name: 'BuyerBackIndex',
   components: { BuyerBackFeedback, BuyerOrderTemp, BuyerBackImageTemp },

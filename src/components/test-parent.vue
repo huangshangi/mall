@@ -46,7 +46,10 @@
 <!--  <seller-back-temp/>-->
 <!--  <trade-hall-status-bar/>-->
 <!--  <trade-hall-custom-bar/>-->
-  <trade-hall-bidder-temp/>
+<!--  <trade-hall-bidder-temp/>-->
+<!--  <seller-back-temp/>-->
+<!--  <order-search/>-->
+  <seller-back-order-manager/>
 </template>
 
 <script>
@@ -60,7 +63,7 @@
 // import TradeHallWordTemp from './tradeHall/tradeHallWordTemp'
 // import TradeHallStatusBar from './tradeHall/tradeHallStatusBar'
 // import TradeHallCustomBar from './tradeHall/tradeHallCustomBar'
-import TradeHallBidderTemp from './tradeHall/tradeHallBidderTemp'
+// import TradeHallBidderTemp from './tradeHall/tradeHallBidderTemp'
 // import TradeHallAddFollowUp from './tradeHall/tradeHallAddFollowUp'
 // import TradeHallDemandDynamic from './tradeHall/tradeHallDemandDynamic'
 // import TradeHallDemandFollowUP from './tradeHall/tradeHallDemandFollowUP'
@@ -98,9 +101,12 @@ import TradeHallBidderTemp from './tradeHall/tradeHallBidderTemp'
 // import ReportDetailStepThree from './reportDetail/reportDetailStepThree'
 // import receiveAndOrderTemplate from './receiveAndOrderTemplate'
 // import TradeHallProgressTemp from './tradeHall/tradeHallProgressTemp'
+// import SellerBackTemp from './sellerBackTemp'
+// import OrderSearch from './sellerBack/orderSearch'
+import sellerBackOrderManager from './sellerBack/sellerBackOrderManager'
 export default {
   name: 'test-parent',
-  components: { TradeHallBidderTemp }
+  components: { sellerBackOrderManager }
 }
 </script>
 

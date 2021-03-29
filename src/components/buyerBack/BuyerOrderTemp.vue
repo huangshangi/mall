@@ -14,7 +14,7 @@
 </template>
 
 <script>
-import BuyerOrderItem from '@/components/BuyerOrderItem'
+import BuyerOrderItem from './BuyerOrderItem'
 export default {
   name: 'BuyerOrderTemp',
   components: { BuyerOrderItem },

@@ -5,7 +5,7 @@
       <seller-back-nav/>
     </el-col>
     <el-col :span="21">
-      <buyer-back-index/>
+      <seller-back-index/>
     </el-col>
   </el-row>
 </template>
@@ -13,10 +13,10 @@
 <script>
 import BackTitleTemp from './buyerBack/backTitleTemp'
 import SellerBackNav from './sellerBackNav'
-import BuyerBackIndex from './buyerBack/BuyerBackIndex'
+import SellerBackIndex from './sellerBack/sellerBackIndex'
 export default {
   name: 'sellerBackTemp',
-  components: { BuyerBackIndex, SellerBackNav, BackTitleTemp }
+  components: { SellerBackIndex, SellerBackNav, BackTitleTemp }
 }
 </script>
 
