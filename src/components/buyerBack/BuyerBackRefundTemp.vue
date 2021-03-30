@@ -20,9 +20,9 @@
 </template>
 
 <script>
-import BuyerBackRefundNavbar from '@/components/BuyerBackRefundNavbar'
-import BuyerBackRefundTitle from '@/components/BuyerBackRefundTitle'
-import BuyerBackRefundItem from '@/components/BuyerBackRefundItem'
+import BuyerBackRefundNavbar from './BuyerBackRefundNavbar'
+import BuyerBackRefundTitle from './BuyerBackRefundTitle'
+import BuyerBackRefundItem from './BuyerBackRefundItem'
 export default {
   name: 'BuyerBackRefundTemp',
   components: { BuyerBackRefundItem, BuyerBackRefundTitle, BuyerBackRefundNavbar }

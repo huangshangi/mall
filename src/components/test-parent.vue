@@ -49,7 +49,13 @@
 <!--  <trade-hall-bidder-temp/>-->
 <!--  <seller-back-temp/>-->
 <!--  <order-search/>-->
-  <seller-back-order-manager/>
+<!--  <seller-back-order-manager/>-->
+<!--  <buyer-evaluate-temp/>-->
+<!--  <back-evaluation-manage/>-->
+<!--  <buyer-back-refund-temp/>-->
+<!--  <back-refund-manager/>-->
+<!--  <back-service-manager/>-->
+  <back-publish-service-step1/>
 </template>
 
 <script>
@@ -103,10 +109,16 @@
 // import TradeHallProgressTemp from './tradeHall/tradeHallProgressTemp'
 // import SellerBackTemp from './sellerBackTemp'
 // import OrderSearch from './sellerBack/orderSearch'
-import sellerBackOrderManager from './sellerBack/sellerBackOrderManager'
+// import sellerBackOrderManager from './sellerBack/sellerBackOrderManager'
+// import BuyerEvaluateTemp from './buyerBack/BuyerEvaluateTemp'
+// import BackEvaluationManage from './sellerBack/backEvaluationManage'
+// import BuyerBackRefundTemp from './buyerBack/BuyerBackRefundTemp'
+// import BackRefundManager from './sellerBack/backRefundManager'
+// import BackServiceManager from './sellerBack/backServiceManager'
+import BackPublishServiceStep1 from './sellerBack/backPublishServiceStep1'
 export default {
   name: 'test-parent',
-  components: { sellerBackOrderManager }
+  components: { BackPublishServiceStep1 }
 }
 </script>
 

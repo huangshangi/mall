@@ -23,7 +23,7 @@
 </template>
 
 <script>
-import BuyerEvaluateItem from '@/components/BuyerEvaluateItem'
+import BuyerEvaluateItem from './BuyerEvaluateItem'
 import SearchByConditon from '@/components/searchByConditon'
 export default {
   name: 'BuyerEvaluateTemp',
