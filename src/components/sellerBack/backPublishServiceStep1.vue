@@ -23,14 +23,24 @@
       </el-col>
       <el-col class="select-category-div" :span="7" id="category3">
         <ul class="select-category-div-ul">
-          <template v-for="item in category3s" :key="item" :class="{active: category3 === item.name}">
-            <li @click="category3Click">
+          <template v-for="item in category3s" :key="item">
+            <li @click="category3Click(item)" :class="{active: category3 === item.name}">
               <a href="javascript:;">{{item.name}}</a>
             </li>
           </template>
         </ul>
       </el-col>
     </el-row>
+    <el-row class="brumb-div">
+      <strong>您当前选择的是:</strong>
+      <el-breadcrumb separator-class="el-icon-arrow-right" style="padding-top: 13px;padding-left: 10px;">
+        <el-breadcrumb-item v-if="category1 !== ''">{{category1}}</el-breadcrumb-item>
+        <el-breadcrumb-item v-if="category2 !== ''">{{category2}}</el-breadcrumb-item>
+        <el-breadcrumb-item v-if="category3 !== ''">{{category3}}</el-breadcrumb-item>
+      </el-breadcrumb>
+    </el-row>
+
+    <el-button type="primary" class="submit-button" :disabled="category3 === ''">下一步，填写服务信息</el-button>
   </div>
 </template>
 
@@ -85,7 +95,7 @@ export default {
 
 <style scoped>
 .selectCategory{
-  padding-left: 150px;
+  padding-left: 10%;
   background: #f6f9ff;
   border: solid 1px #d2e0fa;
   overflow: hidden;
@@ -134,5 +144,20 @@ li:hover,.active{
 .select-category-div-ul a{
   color: #888;
   text-decoration: none;
+}
+.brumb-div{
+  font-family: "simsun", serif;
+  border: solid 1px #d2e0fa;
+  border-top-color: rgb(210, 224, 250);
+  border-top-style: solid;
+  border-top-width: 1px;
+  border-top: none;
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  padding-left: 10%;
+}
+.submit-button{
+  margin-top: 30px;
 }
 </style>

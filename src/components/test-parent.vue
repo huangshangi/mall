@@ -55,7 +55,10 @@
 <!--  <buyer-back-refund-temp/>-->
 <!--  <back-refund-manager/>-->
 <!--  <back-service-manager/>-->
-  <back-publish-service-step1/>
+<!--  <back-publish-service-step3/>-->
+<!--  <back-account-index/>-->
+<!--  <back-account-trade-record/>-->
+  <back-fund-detail/>
 </template>
 
 <script>
@@ -115,10 +118,13 @@
 // import BuyerBackRefundTemp from './buyerBack/BuyerBackRefundTemp'
 // import BackRefundManager from './sellerBack/backRefundManager'
 // import BackServiceManager from './sellerBack/backServiceManager'
-import BackPublishServiceStep1 from './sellerBack/backPublishServiceStep1'
+// import BackPublishServiceStep3 from './sellerBack/backPublishServiceStep3'
+// import BackAccountIndex from './sellerBack/backAccountIndex'
+// import BackAccountTradeRecord from './sellerBack/backAccountTradeRecord'
+import BackFundDetail from './sellerBack/backFundDetail'
 export default {
   name: 'test-parent',
-  components: { BackPublishServiceStep1 }
+  components: { BackFundDetail }
 }
 </script>
 
