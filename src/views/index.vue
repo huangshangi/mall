@@ -1,4 +1,5 @@
 <template>
+<!--  首页-->
   <el-row><el-col :offset="3" :span="18"><mall-title></mall-title></el-col></el-row>
   <el-row class="marginTop10">
     <el-col :span="18" :offset="3"><Search :search="true"></Search></el-col>

@@ -1,11 +1,21 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import Home from '../views/Home.vue'
 
 const routes = [
   {
     path: '/',
-    name: 'Home',
-    component: Home
+    redirect: '/index'
+  },
+  {
+    path: '/index',
+    component: () => import('../views/index')
+  },
+  {
+    path: '/shoppingCart',
+    component: () => import('../views/shoppingCart')
+  },
+  {
+    path: '/confirmOrders',
+    component: () => import('../views/settingOrder')
   },
   {
     path: '/about',

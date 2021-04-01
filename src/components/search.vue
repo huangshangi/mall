@@ -2,7 +2,7 @@
   <el-row class="border">
       <el-col :span="3" class="search-positon-div">
         <div class="search-positon-img">
-          <a href="#"><el-image :src="require('../assets/logo.png')"></el-image></a>
+          <router-link to="/"><el-image :src="require('../assets/logo.png')"></el-image></router-link>
         </div>
       </el-col>
       <el-col :span="10" :offset="10" v-if="!search">

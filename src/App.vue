@@ -14,7 +14,7 @@
 <!--  <demand-require/>-->
 <!--  <publish-evaluate/>-->
 <!--  <goods-detail/>-->
-  <test-parent/>
+<!--  <test-parent/>-->
 <!--  <trade-hall/>-->
 <!--  <order-detail/>-->
 <!--  <confirm-receipt/>-->
@@ -22,6 +22,7 @@
 <!--  <index/>-->
 <!--  <setting-order/>-->
 <!--  <refund-detail/>-->
+  <router-view/>
 </template>
 <script>
 // import index from '@/views/index'
@@ -43,14 +44,13 @@
 // import shoppingCart from '@/views/shoppingCart'
 // import DemandRequire from '@/views/demandRequire'
 // import publishEvaluate from '@/views/publishEvaluate'
-import TestParent from '@/components/test-parent'
+// import TestParent from '@/components/test-parent'
 // import OrderDetail from '@/views/orderDetail'
 // import ConfirmReceipt from './views/confirmReceipt'
 // import receiptStatus from './views/receiptStatus'
 // import TradeHall from './views/tradeHall'
 // import RefundDetail from './views/refundDetail'
 export default {
-  components: { TestParent }
 }
 </script>
 

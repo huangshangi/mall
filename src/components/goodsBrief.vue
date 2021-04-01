@@ -1,12 +1,12 @@
 <template>
   <div class="goodsbrief">
     <el-row>
-      <el-image src="https://g-search1.alicdn.com/img/bao/uploaded/i4/imgextra/i3/112247518/O1CN01g8J4d825PIG7H1Apl_!!0-saturn_solar.jpg_580x580Q90.jpg"></el-image>
+      <el-image src="https://gd3.alicdn.com/imgextra/i3/0/O1CN014nKo7o1KLpLD0PMQ9_!!0-item_pic.jpg_400x400.jpg"></el-image>
     </el-row>
     <el-row class="row">
       <label class="row-price">￥79.90</label>
     </el-row>
-    <el-row class="row"><a class="row_link_title" href="#">极男沐浴露男持久留香沐浴液后背除螨古龙香体清爽沐浴乳男士专用</a></el-row>
+    <el-row class="row"><a class="row_link_title" href="#">Apple/苹果 MacBook Air 笔记本电脑超薄游戏本i7轻薄便携学生pro </a></el-row>
     <el-row class="row"><a class="row_link_store" href="#">李可</a></el-row>
     <el-row class="row" >
       <el-col :span="12" class="row_trade_text">成交10笔</el-col>

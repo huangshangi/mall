@@ -1,4 +1,5 @@
 <template>
+<!--  购物车界面-->
   <el-row>
     <el-col :span="18" :offset="3"><mall-title></mall-title></el-col>
   </el-row>

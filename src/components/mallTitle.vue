@@ -25,7 +25,7 @@
     </el-col>
     <!-- 购物车按钮   -->
     <el-col :span="2">
-      <el-button>购物车</el-button>
+      <el-button @click="clickShoppingCart">购物车</el-button>
     </el-col>
 <!--    商家入驻-->
     <el-col :span="2">
@@ -33,7 +33,7 @@
     </el-col>
     <!-- 我的订单按钮   -->
     <el-col :span="2">
-      <el-button>我的订单</el-button>
+      <el-button @click="clickOrders">我的订单</el-button>
     </el-col>
 <!--    <el-col :span="4">-->
 <!--      &lt;!&ndash;  &ndash;&gt;-->
@@ -61,6 +61,12 @@ export default {
   methods: {
     addressChange () {
       console.log('地址改变')
+    },
+    clickShoppingCart () {
+      this.$router.push('/shoppingCart')
+    },
+    clickOrders () {
+      this.$router.push('/orders')
     }
   },
   data () {

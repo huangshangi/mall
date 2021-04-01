@@ -126,14 +126,19 @@
     <el-col :span="9" class="verticalCenter"></el-col>
     <el-col :span="4" class="verticalCenter"><span>已选商品1件</span></el-col>
     <el-col :span="4" class="verticalCenter"><span>合计￥1000000.00</span></el-col>
-    <el-col :span="2" class="verticalCenter"><el-button style="width: 100%" type="primary">结算</el-button></el-col>
+    <el-col :span="2" class="verticalCenter"><el-button style="width: 100%" type="primary" @click="confirmOrders">结算</el-button></el-col>
   </el-row>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'shoppingCart'
+  name: 'shoppingCart',
+  methods: {
+    confirmOrders () {
+      this.$router.push('/confirmOrders')
+    }
+  }
 }
 </script>
 
