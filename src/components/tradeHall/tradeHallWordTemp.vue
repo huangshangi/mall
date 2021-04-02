@@ -3,35 +3,52 @@
     <div class="detail-content">
       <div class="title">
         <i></i>
-        <h4 class="title-val">需求详情</h4>
+        <h4 class="title-val">{{title}}</h4>
         <span class="editOrSave" @click="editOrSave" v-if="needEdit">{{!edit ? '编辑': '保存'}}</span>
       </div>
       <el-form label-width="80px">
-        <el-form-item label="需求类目">
-          <template v-if="edit">
-            <el-input class="input" v-model="input" placeholder="请输入内容"  size="small"></el-input>
-          </template>
-          <template v-else>
-            <span class="item-value">公众平台开发</span>
-          </template>
-        </el-form-item>
-        <el-form-item label="需求预算">
-          <template v-if="edit">
-            <el-radio v-model="radio" label="1">备选项</el-radio>
-            <el-radio v-model="radio" label="2">备选项</el-radio>
-          </template>
-          <template v-else>
-            <span class="item-value">公众平台开发</span>
-          </template>
-        </el-form-item>
-        <el-form-item label="需求描述">
-          <template v-if="edit">
-            <el-input class="input" v-model="input" placeholder="请输入内容"  size="small"></el-input>
-          </template>
-          <template v-else>
-            <span class="item-value">公众平台开发</span>
-          </template>
-        </el-form-item>
+        <template v-for="item in labels" :key="item">
+          <el-form-item :label="item.title +':'">
+            <template v-if="edit">
+              <template v-if="item.type === radio">
+                <template v-for="radio in item.radios" :key="radio">
+                  <el-radio>{{radio}}</el-radio>
+                </template>
+              </template>
+              <template v-else-if="item.type === input">
+                <el-input class="input" v-model="input" placeholder="请输入内容"  size="small"></el-input>
+              </template>
+            </template>
+            <template v-else>
+              <span class="item-value">{{item.value}}</span>
+            </template>
+          </el-form-item>
+        </template>
+<!--        <el-form-item label="需求类目">-->
+<!--          <template v-if="edit">-->
+<!--            <el-input class="input" v-model="input" placeholder="请输入内容"  size="small"></el-input>-->
+<!--          </template>-->
+<!--          <template v-else>-->
+<!--            <span class="item-value">公众平台开发</span>-->
+<!--          </template>-->
+<!--        </el-form-item>-->
+<!--        <el-form-item label="需求预算">-->
+<!--          <template v-if="edit">-->
+<!--            <el-radio v-model="radio" label="1">备选项</el-radio>-->
+<!--            <el-radio v-model="radio" label="2">备选项</el-radio>-->
+<!--          </template>-->
+<!--          <template v-else>-->
+<!--            <span class="item-value">公众平台开发</span>-->
+<!--          </template>-->
+<!--        </el-form-item>-->
+<!--        <el-form-item label="需求描述">-->
+<!--          <template v-if="edit">-->
+<!--            <el-input class="input" v-model="input" placeholder="请输入内容"  size="small"></el-input>-->
+<!--          </template>-->
+<!--          <template v-else>-->
+<!--            <span class="item-value">公众平台开发</span>-->
+<!--          </template>-->
+<!--        </el-form-item>-->
       </el-form>
     </div>
   </div>
@@ -40,10 +57,14 @@
 <script>
 export default {
   name: 'tradeHallWordTemp',
+  props: {
+    needEdit: Boolean,
+    labels: Array,
+    title: String
+  },
   data () {
     return {
       edit: false,
-      needEdit: true,
       radio: '1'
     }
   },

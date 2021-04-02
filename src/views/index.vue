@@ -22,11 +22,10 @@
 </template>
 
 <script>
-import mallTitle from '../components/mallTitle'
-import Search from '@/components/search'
-// import GoodsBrief from '@/components/goodsBrief'
-import goodsIndexTemple from '@/components/goodsIndexTemple'
-import IndexMain from '@/components/indexMain'
+import mallTitle from '../components/front/mallTitle'
+import Search from '../components/front/search'
+import goodsIndexTemple from '../components/front/goodsIndexTemple'
+import IndexMain from '../components/front/indexMain'
 export default {
   name: 'index',
   components: {

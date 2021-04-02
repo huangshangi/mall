@@ -1,4 +1,5 @@
 <template>
+<!--  商品详细信息界面-->
   <el-row>
     <el-col :offset="3" :span="18"><mall-title/></el-col>
   </el-row>
@@ -51,12 +52,12 @@
 </template>
 
 <script>
-import Search from '@/components/search'
-import mallTitle from '@/components/title'
-import GoodsDetailService from '@/components/goodsDetailService'
-import NavTemplate from '@/components/navTemplate'
-import StoreBriefInformation from '@/components/storeBriefInformation'
-import GoodsDetailMain from '@/components/goodsDetailMain'
+import Search from '../components/front/search'
+import mallTitle from '../components/front/mallTitle'
+import GoodsDetailService from '../components/front/goodsDetailService'
+import NavTemplate from '../components/front/navTemplate'
+import StoreBriefInformation from '../components/front/storeBriefInformation'
+import GoodsDetailMain from '../components/front/goodsDetailMain'
 export default {
   name: 'goodsDetail',
   components: { GoodsDetailMain, StoreBriefInformation, NavTemplate, GoodsDetailService, Search, mallTitle },

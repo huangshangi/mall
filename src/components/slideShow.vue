@@ -1,4 +1,5 @@
 <template>
+<!--  弃用-->
 <div style="margin-top: 100px">
   <el-button @click="pre()">上一个</el-button>
   <div style="margin: 3px;background-color: green">

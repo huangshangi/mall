@@ -25,12 +25,14 @@
         </el-form-item>
         <el-form-item label="下次跟进时间">
           <el-date-picker
+             style="width: 30%"
              v-model="value1"
              type="date"
              placeholder="选择日期">
           </el-date-picker>
           -
           <el-time-picker
+             style="width: 30%"
              v-model="value1"
              :disabled-hours="disabledHours"
              :disabled-minutes="disabledMinutes"

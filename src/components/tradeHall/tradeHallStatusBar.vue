@@ -29,5 +29,6 @@ h4{
 }
 .status-div{
   margin: 10px 0px;
+  text-align: center;
 }
 </style>

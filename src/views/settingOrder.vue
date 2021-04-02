@@ -11,9 +11,9 @@
 </template>
 
 <script>
-import mallTitle from '@/components/mallTitle'
-import Search from '@/components/search'
-import SettingOrderMain from '@/components/settingOrderMain'
+import mallTitle from '../components/front/mallTitle'
+import Search from '../components/front/search'
+import SettingOrderMain from '../components/front/settingOrderMain'
 export default {
   name: 'settingOrder',
   components: { SettingOrderMain, mallTitle, Search }

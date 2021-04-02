@@ -3,7 +3,7 @@
     <el-row>
       <el-col :span="18">
         <trade-hall-classify/>
-        <trade-hall-title/>
+        <trade-hall-tab :tabs="tabs"/>
         <el-row v-for="item1 in 5" :key="item1">
           <el-col :span="12" v-for="item in 10" :key="item">
             <trade-hall-demand-card/>
@@ -29,12 +29,17 @@
 
 <script>
 import tradeHallClassify from './tradeHallClassify'
-import tradeHallTitle from './tradeHallTitle'
+import tradeHallTab from './tradeHallTab'
 import tradeHallDemandCard from './tradeHallDemandCard'
 import TradeHallRightNav from './tradeHallRightNav'
 export default {
-  name: 'tradeHallCallBit',
-  components: { TradeHallRightNav, tradeHallDemandCard, tradeHallTitle, tradeHallClassify }
+  name: 'tradeHallTabTemp',
+  components: { TradeHallRightNav, tradeHallDemandCard, tradeHallTab, tradeHallClassify },
+  data () {
+    return {
+      tabs: ['最新需求', '热门需求', '发现需求']
+    }
+  }
 }
 </script>
 

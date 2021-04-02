@@ -12,7 +12,11 @@
            <el-col :span="12">付款时间：2021-01-11 21:13:09</el-col>
            <el-col :span="12">完结时间：2021-01-11 21:13:09</el-col>
          </el-row>
-         <el-row><el-col><span>您可以</span><el-button>评价</el-button></el-col></el-row>
+         <el-row><el-col><span>您可以</span>
+           <el-button @click="clickEvaluate">评价</el-button>
+           <el-button @click="clickRefund">退款</el-button>
+           <el-button @click="clickReport">投诉</el-button>
+         </el-col></el-row>
        </template>
      </receive-and-order-template>
    </el-col>
@@ -20,10 +24,21 @@
 </template>
 
 <script>
-import ReceiveAndOrderTemplate from '../components/receiveAndOrderTemplate'
+import ReceiveAndOrderTemplate from '../components/front/orderDetails/receiveAndOrderTemplate'
 export default {
   name: 'orderDetail',
-  components: { ReceiveAndOrderTemplate }
+  components: { ReceiveAndOrderTemplate },
+  methods: {
+    clickEvaluate () {
+      this.$router.push('/publishEvaluate')
+    },
+    clickRefund () {
+      this.$router.push('/refund')
+    },
+    clickReport () {
+      this.$router.push('/report')
+    }
+  }
 }
 </script>
 

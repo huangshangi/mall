@@ -15,7 +15,7 @@
         </el-col>
       </template>
     </el-row>
-    <trade-hall-progress v-for="item in 3" :key="item"></trade-hall-progress>
+    <trade-hall-progress v-for="item in 3" :key="item" :footer-show="true" :title-show="true"></trade-hall-progress>
   </div>
 </template>
 

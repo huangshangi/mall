@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import BackTitleTemp from './buyerBack/backTitleTemp'
+import BackTitleTemp from './buyerBack/common/backTitleTemp'
 import SellerBackNav from './sellerBackNav'
 import SellerBackIndex from './sellerBack/sellerBackIndex'
 export default {

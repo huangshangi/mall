@@ -63,11 +63,11 @@
 </template>
 
 <script>
-import Search from '@/components/search'
-import mallTitle from '@/components/title'
-import NavTemplate from '@/components/navTemplate'
-import StoreBriefInformation from '@/components/storeBriefInformation'
-import goodsBrief from '@/components/goodsBrief'
+import Search from '../components/front/search'
+import mallTitle from '../components/front/mallTitle'
+import NavTemplate from '../components/front/navTemplate'
+import StoreBriefInformation from '../components/front/storeBriefInformation'
+import goodsBrief from '../components/front/goodsBrief'
 export default {
   name: 'goodsStore',
   data () {

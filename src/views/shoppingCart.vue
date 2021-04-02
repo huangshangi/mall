@@ -12,9 +12,9 @@
 </template>
 
 <script>
-import shoppingCartMain from '@/components/shoppingCartMain'
-import mallTitle from '@/components/mallTitle'
-import Search from '@/components/search'
+import shoppingCartMain from '../components/front/shoppingCartMain'
+import mallTitle from '../components/front/mallTitle'
+import Search from '../components/front/search'
 export default {
   name: 'shoppingCart',
   components: { mallTitle, shoppingCartMain, Search }

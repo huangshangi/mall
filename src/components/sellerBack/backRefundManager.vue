@@ -63,7 +63,7 @@
 </template>
 
 <script>
-import BuyerBackRefundNavbar from '../buyerBack/BuyerBackRefundNavbar'
+import BuyerBackRefundNavbar from '../buyerBack/refunds/BuyerBackRefundNavbar'
 export default {
   name: 'backRefundManager',
   components: { BuyerBackRefundNavbar },

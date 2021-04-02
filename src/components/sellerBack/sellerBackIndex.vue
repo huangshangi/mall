@@ -5,7 +5,7 @@
         <el-col :span="4" style="margin: 20px 30px;">
           <el-image style="width: 100%" src="https://avatar.zbjimg.com/020/45/80/200x200_avatar_82.jpg!middle?t=1616725866572"></el-image>
         </el-col>
-        <el-col :span="18">
+        <el-col :span="15">
           <div>
             <p class="storeTitle">huangshangi</p>
             <p>店铺id:000001</p>

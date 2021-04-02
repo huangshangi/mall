@@ -25,7 +25,7 @@
 </template>
 
 <script>
-import receiveAndOrderTemplate from '../components/receiveAndOrderTemplate'
+import receiveAndOrderTemplate from '../components/front/orderDetails/receiveAndOrderTemplate'
 export default {
   name: 'confirmReceipt',
   components: { receiveAndOrderTemplate }

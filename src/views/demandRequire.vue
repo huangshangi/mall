@@ -25,6 +25,7 @@
           </el-form-item>
           <el-form-item label="要求">
             <el-input
+               style="width: 80%"
                 type="textarea"
                 :rows="5"
                 placeholder="请输入内容">
@@ -72,8 +73,8 @@
 </template>
 
 <script>
-import mallTitle from '@/components/title'
-import Search from '@/components/search'
+import mallTitle from '../components/front/mallTitle'
+import Search from '../components/front/search'
 export default {
   name: 'demandRequire',
   components: { Search, mallTitle },

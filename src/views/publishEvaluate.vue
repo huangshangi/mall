@@ -8,10 +8,10 @@
 </template>
 
 <script>
-import mallTitle from '@/components/mallTitle'
-import Search from '@/components/search'
-import GoodsDetailMain from '@/components/goodsDetailMain'
-import PublishEvaluateMain from '@/components/publishEvaluateMain'
+import mallTitle from '../components/front/mallTitle'
+import Search from '../components/front/search'
+import GoodsDetailMain from '../components/front/goodsDetailMain'
+import PublishEvaluateMain from '../components/front/evluates/publishEvaluateMain'
 export default {
   name: 'publishEvaluate',
   components: { PublishEvaluateMain, GoodsDetailMain, Search, mallTitle }

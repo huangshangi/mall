@@ -17,9 +17,9 @@
 </template>
 
 <script>
-import mallTitle from '../components/mallTitle'
-import Search from '../components/search'
-import ReceiptStatusTemp from '../components/receiptStatusTemp'
+import mallTitle from '../components/front/mallTitle'
+import Search from '../components/front/search'
+import ReceiptStatusTemp from '../components/front/receipts/receiptStatusTemp'
 export default {
   name: 'receiptStatus',
   components: { ReceiptStatusTemp, Search, mallTitle }

@@ -1,4 +1,5 @@
 <template>
+<!--  招标tab页-->
   <div class="allDiv">
     <div class="header">
       <span class="nameAndTime"><span>t****d</span>2021-02-21</span>

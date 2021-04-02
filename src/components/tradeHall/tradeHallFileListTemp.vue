@@ -2,7 +2,7 @@
   <div class="allDiv">
     <div class="title">
       <i></i>
-      <h4 class="title-val">需求详情</h4>
+      <h4 class="title-val">文件柜</h4>
       <a href="#" class="detailHref">详情 ></a>
     </div>
     <ul>
