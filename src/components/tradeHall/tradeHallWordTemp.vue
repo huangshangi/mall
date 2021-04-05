@@ -10,12 +10,12 @@
         <template v-for="item in labels" :key="item">
           <el-form-item :label="item.title +':'">
             <template v-if="edit">
-              <template v-if="item.type === radio">
+              <template v-if="item.type === 'radio'">
                 <template v-for="radio in item.radios" :key="radio">
                   <el-radio>{{radio}}</el-radio>
                 </template>
               </template>
-              <template v-else-if="item.type === input">
+              <template v-else-if="item.type === 'input'">
                 <el-input class="input" v-model="input" placeholder="请输入内容"  size="small"></el-input>
               </template>
             </template>

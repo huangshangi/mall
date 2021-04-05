@@ -13,7 +13,7 @@
             <el-submenu v-else>
               <template #title>{{item.title}}</template>
               <template v-for="(itemChild,indexChild) in item.children" :key="indexChild">
-                <el-menu-item :index="index - indexChild">{{itemChild.title}}</el-menu-item>
+                <el-menu-item :index="index-indexChild">{{itemChild.title}}</el-menu-item>
               </template>
             </el-submenu>
           </template>

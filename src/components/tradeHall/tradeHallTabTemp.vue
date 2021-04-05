@@ -6,7 +6,7 @@
         <trade-hall-tab :tabs="tabs"/>
         <el-row v-for="item1 in 5" :key="item1">
           <el-col :span="12" v-for="item in 10" :key="item">
-            <trade-hall-demand-card/>
+            <trade-hall-demand-card :style="menuActive"/>
           </el-col>
         </el-row>
         <el-pagination
@@ -35,6 +35,9 @@ import TradeHallRightNav from './tradeHallRightNav'
 export default {
   name: 'tradeHallTabTemp',
   components: { TradeHallRightNav, tradeHallDemandCard, tradeHallTab, tradeHallClassify },
+  props: {
+    menuActive: String
+  },
   data () {
     return {
       tabs: ['最新需求', '热门需求', '发现需求']

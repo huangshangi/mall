@@ -1,5 +1,5 @@
 <template>
-  <div class="allDiv">
+  <div class="allDiv" v-if="true">
     <div class="detail-content">
       <div class="title">
         <i></i>
@@ -27,6 +27,26 @@
       </div>
       <div class="submit-div">
         <el-button type="text" icon="el-icon-search">保存记录</el-button>
+      </div>
+    </div>
+  </div>
+  <div class="allDiv" v-else>
+    <div class="detail-content">
+      <div class="title">
+        <i></i>
+        <h4 class="title-val">为您服务的服务商</h4>
+      </div>
+      <div class="image-div">
+        <el-avatar
+           shape="circle"
+           style="width: 100px; height: 100px"
+           src="https://avatar.zbjimg.com/029/18/07/200x200_avatar_98.jpg!small"
+           fit="fill"></el-avatar>
+        <p>这是服务商名字</p>
+      </div>
+      <div class="contact-div">
+        <el-button type="primary" plain>在线联系</el-button>
+        <el-button type="primary" plain>电话联系</el-button>
       </div>
     </div>
   </div>

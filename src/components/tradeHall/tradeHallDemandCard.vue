@@ -23,7 +23,17 @@
         <span>网店代运营</span>
       </div>
       <div class="button-box">
-        <el-button class="button">我要投标</el-button>
+        <el-button class="button" @click="detailClick">
+          <template v-if="style === '1'">
+            我要投标
+          </template>
+          <template v-else-if="style === '2'">
+            我要投标
+          </template>
+          <template v-else>
+            我要投标
+          </template>
+        </el-button>
       </div>
     </div>
   </div>
@@ -31,7 +41,15 @@
 
 <script>
 export default {
-  name: 'tradeHallDemandCard'
+  name: 'tradeHallDemandCard',
+  props: {
+    style: String
+  },
+  methods: {
+    detailClick () {
+      this.$router.push('/tradeHall/detail')
+    }
+  }
 }
 </script>
 
